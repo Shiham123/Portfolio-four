@@ -1,5 +1,6 @@
 import PortfolioImg from "../../assets/portfolioImg.png"
 import LeftHeader from "./LeftHeader"
+import LeftSideIcons from "./LeftSideIcons"
 
 const LeftSection = () => {
 	return (
@@ -29,9 +30,10 @@ const LeftSection = () => {
 						A MERN Stack Expert
 					</h1>
 				</div>
-			</div>
 
-			{/* icons section */}
+				{/* icons section */}
+				<LeftSideIcons />
+			</div>
 		</section>
 	)
 }

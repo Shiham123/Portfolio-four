@@ -17,6 +17,7 @@ export default {
 			primaryFont: "#ffffff",
 			secondaryFont: "#999979",
 			primaryBorder: "#565656",
+			hoverColor: "#2dd986",
 		},
 		extend: {
 			fontFamily: {Inter: ["Inter", "sans-serif"]},
