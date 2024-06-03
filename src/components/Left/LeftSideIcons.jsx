@@ -4,10 +4,10 @@ import PerIcon from "./PerIcon"
 const LeftSideIcons = () => {
 	return (
 		<div className="flex justify-center items-center gap-4 pb-12">
-			<PerIcon Icon={FaLinkedin} />
-			<PerIcon Icon={FaGithub} />
-			<PerIcon Icon={FaWhatsapp} />
-			<PerIcon Icon={FaDiscord} />
+			<PerIcon Icon={FaLinkedin} link="https://www.linkedin.com/in/shiham36651786/" />
+			<PerIcon Icon={FaGithub} link="https://github.com/Shiham123" />
+			<PerIcon Icon={FaWhatsapp} link="https://wa.me/8801327239397" />
+			<PerIcon Icon={FaDiscord} link="https://discordapp.com/users/{shiham36651786}" />
 		</div>
 	)
 }
