@@ -1,3 +1,4 @@
+import Button from "../../Shared/Button"
 import PortfolioImg from "../../assets/portfolioImg.png"
 import LeftHeader from "./LeftHeader"
 import LeftSideIcons from "./LeftSideIcons"
@@ -33,6 +34,7 @@ const LeftSection = () => {
 
 				{/* icons section */}
 				<LeftSideIcons />
+				<Button text="Hire Me" />
 			</div>
 		</section>
 	)
