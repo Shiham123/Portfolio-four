@@ -16,6 +16,7 @@ export default {
 			secondary: "#28e98c",
 			primaryFont: "#ffffff",
 			secondaryFont: "#999979",
+			primaryBorder: "#565656",
 		},
 		extend: {
 			fontFamily: {Inter: ["Inter", "sans-serif"]},
