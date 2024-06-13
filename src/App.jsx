@@ -4,7 +4,7 @@ import RightSection from "./components/Right/RightSection"
 
 const App = () => {
 	return (
-		<div className="grid grid-cols-12 py-[5rem] px-8">
+		<div className="grid grid-cols-12 py-[5rem]">
 			<LeftSection />
 			<MiddleSection />
 			<RightSection />
