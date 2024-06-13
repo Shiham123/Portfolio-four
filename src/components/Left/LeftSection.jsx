@@ -14,17 +14,31 @@ const LeftSection = () => {
 					<LeftHeader headingText="Developer" />
 				</div>
 				{/* img section */}
-				<div className="w-4/6 text-center mx-auto bg-secondary rounded-[30px] group relative">
-					<img src={PortfolioImg} className="w-full h-full " alt="My Image" />
-				</div>
+				<a
+					href="https://www.linkedin.com/in/shiham36651786/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<div className="w-4/6 text-center mx-auto bg-secondary hover:bg-primary transition-all duration-300 ease-in-out rounded-[30px] group relative">
+						<img src={PortfolioImg} className="w-full h-full " alt="My Image" />
+					</div>
+				</a>
 				{/* Contact section */}
 				<div className="flex flex-col justify-center items-center my-10 font-Inter text-primaryFont">
-					<h1 className="font-bold text-3xl leading-5 tracking-wide py-4 hover:text-secondary transition-all duration-300 ease-out">
-						Shiham Ibne Yousuf
-					</h1>
-					<h1 className="font-medium text-xl leading-5 tracking-wide hover:text-secondary transition-all duration-300 ease-out">
-						A MERN Stack Expert
-					</h1>
+					<a href="https://wa.me/+8801327239397" target="_blank" rel="noopener noreferrer">
+						<h1 className="font-bold text-2xl leading-5 tracking-wide py-4 hover:text-secondary transition-all duration-300 ease-out uppercase">
+							Shiham Ibne Yousuf
+						</h1>
+					</a>
+					<a
+						href="https://discordapp.com/users/1022503770321584178"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<h1 className="font-medium italic text-lg leading-5 tracking-wide hover:text-secondary transition-all duration-300 ease-out">
+							MERN Stack Expert
+						</h1>
+					</a>
 				</div>
 
 				{/* icons section */}

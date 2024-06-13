@@ -2,12 +2,17 @@ import PropTypes from "prop-types"
 
 const LeftHeader = ({headingText}) => {
 	return (
-		<p className="font-Inter text-[13px] leading-6 tracking-wider text-primaryFont hover:bg-secondary hover:text-primaryBorder p-2 rounded-[10px] transition-all duration-300 ease-in-out border-[1px] border-secondary italic font-medium">
-			{headingText}
-		</p>
+		<a href="https://github.com/Shiham123" target="_blank" rel="noopener noreferrer">
+			<p className="font-Inter text-[13px] leading-6 tracking-[3px] text-primaryFont hover:text-secondary p-2 transition-all duration-300 ease-in-out italic font-medium cursor-pointer">
+				{headingText}
+			</p>
+		</a>
 	)
 }
 
 export default LeftHeader
 
-LeftHeader.propTypes = {headingText: PropTypes.string.isRequired}
+LeftHeader.propTypes = {
+	headingText: PropTypes.string.isRequired,
+	githubUrl: PropTypes.string.isRequired,
+}
