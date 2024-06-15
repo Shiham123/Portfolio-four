@@ -19,9 +19,7 @@ export default {
 			primaryBorder: "#565656",
 			hoverColor: "#2dd986",
 		},
-		extend: {
-			fontFamily: {Inter: ["Inter", "sans-serif"]},
-		},
+		extend: {fontFamily: {Inter: ["Inter", "sans-serif"]}},
 	},
 	plugins: [],
 }

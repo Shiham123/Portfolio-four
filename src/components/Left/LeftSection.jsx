@@ -19,7 +19,7 @@ const LeftSection = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<div className="w-4/6 text-center mx-auto bg-secondary hover:bg-primary transition-all duration-300 ease-in-out rounded-[30px] group relative">
+					<div className="w-4/6 text-center mx-auto bg-primary border-[1px] hover:bg-secondary border-primaryBorder transition-all duration-300 ease-in-out rounded-[20px] group relative">
 						<img src={PortfolioImg} className="w-full h-full " alt="My Image" />
 					</div>
 				</a>
