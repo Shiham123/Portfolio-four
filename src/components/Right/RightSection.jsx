@@ -13,9 +13,9 @@ import {EnvelopeIcon} from "@heroicons/react/24/outline"
 
 const RightSection = () => {
 	return (
-		<div className="2xl:col-span-1">
+		<section className="2xl:col-span-1 2xl:fixed 2xl:right-[2%] 2xl:top-0">
 			<div className="flex justify-center items-center h-screen">
-				<div className="flex flex-col justify-center gap-[2rem] items-center py-6 w-2/6 border-[1px] border-primaryBorder rounded-custom">
+				<div className="flex flex-col justify-center gap-[2rem] items-center py-6 px-2 border-[1px] border-primaryBorder rounded-custom">
 					<GoHome
 						size={30}
 						className="text-primaryBorder cursor-pointer hover:text-secondary transition-all duration-100"
@@ -53,7 +53,7 @@ const RightSection = () => {
 					<EnvelopeIcon className="text-primaryBorder cursor-pointer hover:text-secondary transition-all duration-100 w-6 h-6" />
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
 

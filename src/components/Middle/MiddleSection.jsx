@@ -3,8 +3,8 @@ import LittlePara from "../../Shared/LittlePara"
 
 const MiddleSection = () => {
 	return (
-		<div className="2xl:col-span-8 2xl:col-start-5 2xl:col-end-12">
-			<div className="md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:px-[10%]">
+		<section className="2xl:col-span-8 2xl:col-start-4 2xl:col-end-12">
+			<div className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:px-[10%]">
 				<LittleHeading headingText="introduce" />
 				<h1 className="text-[78px] mt-12  leading-[90px] text-primaryFont font-Inter font-light capitalize">
 					Say Hi from <span className="text-secondary">Shiham</span>, <br /> A MERN Stack Developer
@@ -16,7 +16,7 @@ const MiddleSection = () => {
 
 				<LittlePara paraText="Shiham's portfolio demonstrates his commitment to delivering high-quality, user-friendly applications with a strong emphasis on code quality, performance, and user experience." />
 			</div>
-		</div>
+		</section>
 	)
 }
 

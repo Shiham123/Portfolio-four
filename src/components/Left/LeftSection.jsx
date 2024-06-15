@@ -5,7 +5,7 @@ import LeftSideIcons from "./LeftSideIcons"
 
 const LeftSection = () => {
 	return (
-		<section className="2xl:col-span-3 p-[30px]">
+		<section className="2xl:col-span-3 px-[30px] 2xl:fixed 2xl:top-[8%] 2xl:left-[0%] 2xl:w-1/4">
 			<div className="border-[1px] border-primaryBorder rounded-custom flex flex-col">
 				{/* before img section */}
 				<div className="flex justify-between px-6 py-12">
