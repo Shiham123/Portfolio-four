@@ -18,6 +18,7 @@ export default {
 			secondaryFont: "#999979",
 			primaryBorder: "#565656",
 			hoverColor: "#2dd986",
+			paraColor: "#8a9999",
 		},
 		extend: {fontFamily: {Inter: ["Inter", "sans-serif"]}},
 	},
