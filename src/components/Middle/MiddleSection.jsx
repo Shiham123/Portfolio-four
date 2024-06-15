@@ -4,9 +4,9 @@ import LittlePara from "../../Shared/LittlePara"
 const MiddleSection = () => {
 	return (
 		<div className="col-span-6 xl:col-span-6 col-start-5">
-			<div>
+			<div className="md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:px-[10%]">
 				<LittleHeading headingText="introduce" />
-				<h1 className="text-[78px] mt-12 leading-[90px] text-primaryFont font-Inter font-light capitalize">
+				<h1 className="text-[78px] mt-12  leading-[90px] text-primaryFont font-Inter font-light capitalize">
 					Say Hi from <span className="text-secondary">Shiham</span>, <br /> A MERN Stack Developer
 					<br /> And Programmer.
 				</h1>
