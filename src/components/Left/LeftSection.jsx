@@ -5,11 +5,10 @@ import LeftSideIcons from "./LeftSideIcons"
 
 const LeftSection = () => {
 	return (
-		<section className="col-span-3 p-[30px]">
+		<section className="col-span-3 lg:col-span-4 p-[30px] lg:border-2 lg:border-secondary">
 			<div className="border-[1px] border-primaryBorder rounded-[30px] flex flex-col">
 				{/* before img section */}
 				<div className="flex justify-between px-6 py-12">
-					<LeftHeader headingText="Designer" />
 					<LeftHeader headingText="Programmer" />
 					<LeftHeader headingText="Developer" />
 				</div>
