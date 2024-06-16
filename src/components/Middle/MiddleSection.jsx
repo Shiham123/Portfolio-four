@@ -3,7 +3,7 @@ import LittlePara from "../../Shared/LittlePara"
 
 const MiddleSection = () => {
 	return (
-		<section className="2xl:col-span-8 2xl:col-start-4 2xl:col-end-12">
+		<section className="2xl:col-span-8 2xl:col-start-4 2xl:col-end-12 xl:col-span-8 xl:col-start-4 xl:col-end-12">
 			<div className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:px-[10%]">
 				<LittleHeading headingText="introduce" />
 				<h1 className="text-[78px] mt-12  leading-[90px] text-primaryFont font-Inter font-light capitalize">
