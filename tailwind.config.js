@@ -21,6 +21,7 @@ export default {
 			hoverColor: "#2dd986",
 			paraColor: "#8a9999",
 			bgSidebar: "#191919",
+			sidebarText: "#8f8f8f",
 		},
 		extend: {fontFamily: {Inter: ["Inter", "sans-serif"]}},
 	},
