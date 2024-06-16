@@ -5,10 +5,10 @@ import LeftSideIcons from "./LeftSideIcons"
 
 const LeftSection = () => {
 	return (
-		<section className="2xl:col-span-3 2xl:fixed 2xl:top-[8%] 2xl:left-[0%] 2xl:w-1/4 2xl:px-[30px] xl:px-[20px] xl:col-span-3 xl:fixed xl:top-[10%] xl:left-[2%] xl:w-[28%]">
-			<div className="border-[1px] border-primaryBorder rounded-custom flex flex-col">
+		<section className="2xl:col-span-3 2xl:fixed 2xl:top-[8%] 2xl:left-[0%] 2xl:w-1/4 2xl:px-[30px] xl:px-[20px] xl:col-span-3 xl:fixed xl:top-[10%] xl:left-[2%] xl:w-[28%] lg:hidden">
+			<div className="border-[1px] border-primaryBorder rounded-custom 2xl:flex 2xl:flex-col xl:flex xl:flex-col">
 				{/* before img section */}
-				<div className="flex justify-between px-6 2xl:py-12 xl:py-6">
+				<div className="flex justify-between items-center 2xl:px-6 xl:px-6 2xl:py-12 xl:py-6">
 					<LeftHeader headingText="Programmer" />
 					<LeftHeader headingText="Developer" />
 				</div>
