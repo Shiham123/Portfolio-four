@@ -20,6 +20,7 @@ export default {
 			primaryBorder: "#565656",
 			hoverColor: "#2dd986",
 			paraColor: "#8a9999",
+			bgSidebar: "#191919",
 		},
 		extend: {fontFamily: {Inter: ["Inter", "sans-serif"]}},
 	},
