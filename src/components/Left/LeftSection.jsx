@@ -5,10 +5,10 @@ import LeftSideIcons from "./LeftSideIcons"
 
 const LeftSection = () => {
 	return (
-		<section className="2xl:col-span-3 2xl:fixed 2xl:top-[8%] 2xl:left-[0%] 2xl:w-1/4 2xl:px-[30px] xl:px-[20px] xl:col-span-3 xl:fixed xl:top-[5%] xl:left-[2%] xl:w-[28%]">
+		<section className="2xl:col-span-3 2xl:fixed 2xl:top-[8%] 2xl:left-[0%] 2xl:w-1/4 2xl:px-[30px] xl:px-[20px] xl:col-span-3 xl:fixed xl:top-[10%] xl:left-[2%] xl:w-[28%]">
 			<div className="border-[1px] border-primaryBorder rounded-custom flex flex-col">
 				{/* before img section */}
-				<div className="flex justify-between px-6 py-12">
+				<div className="flex justify-between px-6 2xl:py-12 xl:py-6">
 					<LeftHeader headingText="Programmer" />
 					<LeftHeader headingText="Developer" />
 				</div>
@@ -23,7 +23,7 @@ const LeftSection = () => {
 					</div>
 				</a>
 				{/* Contact section */}
-				<div className="flex flex-col justify-center items-center my-10 font-Inter text-primaryFont">
+				<div className="flex flex-col justify-center items-center 2xl:my-10 xl:my-6 font-Inter text-primaryFont">
 					<a href="https://wa.me/+8801327239397" target="_blank" rel="noopener noreferrer">
 						<h1 className="font-bold 2xl:text-2xl xl:text-xl leading-5 tracking-wide py-4 hover:text-secondary transition-all duration-300 ease-out uppercase">
 							Shiham Ibne Yousuf
