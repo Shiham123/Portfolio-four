@@ -62,17 +62,33 @@ const Sidebar = () => {
 						<FaEnvelope color="#8f8f8f" size={20} />
 						<span className="font-Inter text-sidebarText text-lg">Contact</span>
 					</li>
-				</ul>
 
-				<div className="text-left">
-					<p>Social</p>
-					<div className="flex justify-center">
-						<FaLinkedin />
-						<FaGithub />
-						<FaWhatsapp />
-						<FaDiscord />
+					<p className="font-Inter text-sidebarText font-bold tracking-widest text-lg pt-6">
+						Social
+					</p>
+					<div className="flex justify-center items-center gap-4">
+						<a
+							href="https://www.linkedin.com/in/shiham36651786/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaLinkedin size={25} color="#8f8f8f" />
+						</a>
+						<a href="https://github.com/Shiham123" target="_blank" rel="noopener noreferrer">
+							<FaGithub size={25} color="#8f8f8f" />
+						</a>
+						<a href="https://wa.me/+8801327239397" target="_blank" rel="noopener noreferrer">
+							<FaWhatsapp size={25} color="#8f8f8f" />
+						</a>
+						<a
+							href="https://discordapp.com/users/1022503770321584178"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaDiscord size={25} color="#8f8f8f" />
+						</a>
 					</div>
-				</div>
+				</ul>
 			</div>
 		</>
 	)
