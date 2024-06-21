@@ -10,23 +10,33 @@ import {
 	FaHome,
 } from "react-icons/fa"
 import {FaRegMessage, FaTarp, FaBarsStaggered} from "react-icons/fa6"
-import {useDispatch} from "react-redux"
-import {sidebarOpenClose} from "../../app/theme"
+import {useDispatch, useSelector} from "react-redux"
+import {animateApplied, sidebarOpenClose} from "../../app/theme"
+
+import "animate.css"
 
 // Sidebar Component
 const Sidebar = () => {
 	const dispatch = useDispatch()
+	const {animateClass, isSidebarOpen} = useSelector((state) => state.theme)
+
+	const handleSidebar = () => {
+		dispatch(sidebarOpenClose(false))
+		dispatch(animateApplied("animate__animated animate__fadeOutRight"))
+	}
 
 	return (
 		<>
 			{/* Backdrop for blur effect */}
 			<div
-				onClick={() => dispatch(sidebarOpenClose(false))}
+				onClick={handleSidebar}
 				className="2xl:hidden xl:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-10 bg-[#ffffff] z-10"
 			></div>
 
 			{/* Sidebar */}
-			<div className="2xl:hidden xl:hidden fixed top-0 right-0 h-full bg-bgSidebar flex flex-col justify-center items-center lg:w-[35%] z-20">
+			<div
+				className={`2xl:hidden xl:hidden fixed top-0 right-0 h-full bg-bgSidebar flex flex-col justify-center items-center lg:w-[35%] z-20`}
+			>
 				<ul className="flex flex-col justify-start items-start gap-6">
 					<li className="font-Inter text-sidebarText capitalize lg:text-2xl tracking-wide">Menu</li>
 
