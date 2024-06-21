@@ -1,16 +1,15 @@
 import {useDispatch} from "react-redux"
 import {HiMiniBars2} from "react-icons/hi2"
-
-// import redux state handle
 import {animateApplied, sidebarOpenClose} from "../../app/theme"
 
 const DrawerComponents = () => {
 	const dispatch = useDispatch()
 
 	const handleSidebarOpen = () => {
-		dispatch(sidebarOpenClose(true))
 		dispatch(animateApplied("animate__animated animate__fadeInRight"))
+		dispatch(sidebarOpenClose(true))
 	}
+
 	return (
 		<div
 			onClick={handleSidebarOpen}
