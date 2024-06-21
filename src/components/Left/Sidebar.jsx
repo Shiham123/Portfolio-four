@@ -10,13 +10,20 @@ import {
 	FaHome,
 } from "react-icons/fa"
 import {FaRegMessage, FaTarp, FaBarsStaggered} from "react-icons/fa6"
+import {useDispatch} from "react-redux"
+import {sidebarOpenClose} from "../../app/theme"
 
 // Sidebar Component
 const Sidebar = () => {
+	const dispatch = useDispatch()
+
 	return (
 		<>
 			{/* Backdrop for blur effect */}
-			<div className="2xl:hidden xl:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-10 bg-[#ffffff] z-10"></div>
+			<div
+				onClick={() => dispatch(sidebarOpenClose(false))}
+				className="2xl:hidden xl:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-10 bg-[#ffffff] z-10"
+			></div>
 
 			{/* Sidebar */}
 			<div className="2xl:hidden xl:hidden fixed top-0 right-0 h-full bg-bgSidebar flex flex-col justify-center items-center lg:w-[35%] z-20">
