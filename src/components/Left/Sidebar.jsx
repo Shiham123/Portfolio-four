@@ -60,11 +60,11 @@ const Sidebar = () => {
 			{isSidebarOpen && (
 				<div
 					id="sidebar"
-					className={`2xl:hidden xl:hidden fixed top-0 right-0 h-full bg-bgSidebar flex flex-col justify-center items-center lg:w-[35%] z-20 ${animateClass} 2xl:border-none xl:border-none lg:border-l-[1px] lg:border-secondary`}
+					className={`2xl:hidden xl:hidden fixed top-0 right-0 h-full bg-bgSidebar bg-opacity-90 flex flex-col justify-center items-center lg:w-[35%] md:w-[35%] z-20 ${animateClass} 2xl:border-none xl:border-none lg:border-l-[1px] lg:border-secondary md:border-l-[1px] md:border-secondary`}
 				>
 					<ul className="flex flex-col justify-start items-start gap-6">
 						<li className="font-Inter text-sidebarText capitalize lg:text-2xl tracking-wide">
-							Menu	
+							Menu
 						</li>
 
 						<li className="flex justify-start items-center gap-4 group">
