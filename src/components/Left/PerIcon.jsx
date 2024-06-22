@@ -30,7 +30,4 @@ const PerIcon = ({Icon, link}) => {
 
 export default PerIcon
 
-PerIcon.propTypes = {
-	Icon: PropTypes.elementType.isRequired,
-	link: PropTypes.string.isRequired,
-}
+PerIcon.propTypes = {Icon: PropTypes.elementType.isRequired, link: PropTypes.string.isRequired}
