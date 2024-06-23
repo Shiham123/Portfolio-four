@@ -1,7 +1,7 @@
 import {FaBriefcase} from "react-icons/fa"
 
 import LittleHeading from "../../Shared/LittleHeading"
-import StepperSection from "./Stepper"
+import StepperComponent from "./StepperComponent"
 
 const Experience = () => {
 	return (
@@ -10,7 +10,7 @@ const Experience = () => {
 			<h1 className="2xl:text-[50px] xl:text-[58px] mt-12  leading-[90px] text-primaryFont font-Inter font-light capitalize">
 				Education &<span className="text-secondary pl-5">Experience</span>
 			</h1>
-			<StepperSection />
+			<StepperComponent />
 		</div>
 	)
 }
