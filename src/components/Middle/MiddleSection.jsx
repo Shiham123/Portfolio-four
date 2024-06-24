@@ -1,5 +1,5 @@
 import About from "./About"
-import Experience from "./Experience"
+import Experience from "./EducationExperience/Experience"
 import Introduction from "./Introduction"
 
 const MiddleSection = () => {

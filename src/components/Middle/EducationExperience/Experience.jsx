@@ -1,6 +1,6 @@
 import {FaBriefcase} from "react-icons/fa"
 
-import LittleHeading from "../../Shared/LittleHeading"
+import LittleHeading from "../../../Shared/LittleHeading"
 import StepperComponent from "./StepperComponent"
 
 const Experience = () => {
