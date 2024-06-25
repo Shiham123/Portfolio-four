@@ -5,8 +5,8 @@ const StepItem = ({topText, middleText, lastText}) => {
 		<>
 			<div className="step-item flex flex-col justify-start items-start relative py-8 pl-12">
 				{/* and this is absolute section */}
-				<div className="absolute top-[25%] left-0 h-[100%] w-[1px] bg-secondary"></div>
-				<div className="step-dot absolute w-4 h-4 rounded-[100%] top-[25%] -left-2 bg-secondary"></div>
+				<div className="absolute top-[25%] left-0 h-[100%] w-[1px] bg-paraColor opacity-70"></div>
+				<div className="step-dot absolute w-3 h-3 rounded-[100%] top-[25%] -left-[0.5%] bg-secondary"></div>
 
 				{/* content */}
 				<h6 className="text-paraColor font-Inter text-lg capitalize tracking-wide hover:text-secondary transition-all duration-200 ease-in-out">
