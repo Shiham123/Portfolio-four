@@ -13,6 +13,7 @@ const ServiceCard = ({headingText, paraText, hyperText}) => {
 				className="font-Inter text-primaryFont font-light tracking-wide first-letter:capitalize underline leading-10"
 				href="https://github.com/Shiham123"
 				target="_blank"
+				rel="noopener noreferrer"
 			>
 				{hyperText}
 			</a>

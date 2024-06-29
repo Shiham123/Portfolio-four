@@ -1,5 +1,4 @@
 import {FaBarsStaggered} from "react-icons/fa6"
-
 import LittleHeading from "../../../Shared/LittleHeading"
 import ServiceCard from "./ServiceCard"
 import SubHeading from "../../../Shared/SubHeading"
@@ -11,19 +10,29 @@ const ServicesSection = () => {
 			<SubHeading mainText="my" spanText="Specialization" />
 			<section className="flex justify-center items-start flex-col gap-8">
 				<ServiceCard
-					headingText="Website Design"
-					paraText="I created digital products with unique ideas use Figma & Framer"
-					hyperText="24 Projects"
+					headingText="MERN Stack Development"
+					paraText="I develop full-stack applications using MongoDB, ExpressJS, ReactJS, and NodeJS."
+					hyperText="Various Projects"
 				/>
 				<ServiceCard
-					headingText="Website Design"
-					paraText="I created digital products with unique ideas use Figma & Framer"
-					hyperText="24 Projects"
+					headingText="Frontend Development"
+					paraText="I create engaging and responsive web designs using technologies like ReactJS, TailwindCSS, and SCSS."
+					hyperText="Multiple Projects"
 				/>
 				<ServiceCard
-					headingText="Website Design"
-					paraText="I created digital products with unique ideas use Figma & Framer"
-					hyperText="24 Projects"
+					headingText="Backend Development"
+					paraText="I build robust backends with NodeJS, ExpressJS, and Mongoose for managing MongoDB."
+					hyperText="Several Projects"
+				/>
+				<ServiceCard
+					headingText="Authentication Systems"
+					paraText="I implement secure authentication systems using Firebase, JWT, and OAuth."
+					hyperText="Several Implementations"
+				/>
+				<ServiceCard
+					headingText="State Management"
+					paraText="I manage application state efficiently using Redux and Redux-toolkit."
+					hyperText="Multiple Projects"
 				/>
 			</section>
 		</section>
