@@ -1,7 +1,6 @@
 import {GoHome} from "react-icons/go"
-
-import LittleHeading from "../../Shared/LittleHeading"
-import LittlePara from "../../Shared/LittlePara"
+import LittleHeading from "../../../Shared/LittleHeading"
+import LittlePara from "../../../Shared/LittlePara"
 
 const Introduction = () => {
 	return (

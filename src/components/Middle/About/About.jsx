@@ -1,8 +1,7 @@
-import LittleHeading from "../../Shared/LittleHeading"
-
 import {FaUser} from "react-icons/fa"
-import LittlePara from "../../Shared/LittlePara"
-import SubHeading from "../../Shared/SubHeading"
+import LittleHeading from "../../../Shared/LittleHeading"
+import SubHeading from "../../../Shared/SubHeading"
+import LittlePara from "../../../Shared/LittlePara"
 
 const About = () => {
 	return (

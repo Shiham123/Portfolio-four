@@ -1,6 +1,6 @@
-import About from "./About"
+import About from "./About/About"
 import Experience from "./EducationExperience/Experience"
-import Introduction from "./Introduction"
+import Introduction from "./Introduction/Introduction"
 import ServicesSection from "./ServicesSection/ServicesSection"
 
 const MiddleSection = () => {
