@@ -8,7 +8,7 @@ const SubHeading = ({mainText, spanText}) => {
 		</h1>
 	)
 }
-
+ 
 export default SubHeading
 
 SubHeading.propTypes = {
