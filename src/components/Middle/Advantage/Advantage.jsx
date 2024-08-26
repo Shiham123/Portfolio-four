@@ -10,12 +10,12 @@ const Advantage = () => {
 			<LittleHeading headingText="my skills" Icon={LuShapes} />
 			<SubHeading mainText="My" spanText="Advantages" />
 			<div className="grid grid-cols-6 gap-x-[50px]">
-				<SkillsCard />
-				<SkillsCard />
-				<SkillsCard />
-				<SkillsCard />
-				<SkillsCard />
-				<SkillsCard />
+				<SkillsCard number={10} />
+				<SkillsCard number={20} />
+				<SkillsCard number={30} />
+				<SkillsCard number={40} />
+				<SkillsCard number={50} />
+				<SkillsCard number={60} />
 			</div>
 		</section>
 	)
