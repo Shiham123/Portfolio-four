@@ -8,14 +8,10 @@ const Advantage = () => {
 	return (
 		<section className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:px-[10%] mt-[15%] my-[10rem]">
 			<LittleHeading headingText="my skills" Icon={LuShapes} />
+
 			<SubHeading mainText="My" spanText="Advantages" />
-			<div className="grid grid-cols-6 gap-x-[50px]">
+			<div className="grid grid-cols-5 gap-x-[50px]">
 				<SkillsCard number={10} />
-				<SkillsCard number={20} />
-				<SkillsCard number={30} />
-				<SkillsCard number={40} />
-				<SkillsCard number={50} />
-				<SkillsCard number={60} />
 			</div>
 		</section>
 	)
