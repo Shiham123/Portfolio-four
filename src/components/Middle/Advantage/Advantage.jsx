@@ -12,6 +12,7 @@ const Advantage = () => {
 			<SubHeading mainText="My" spanText="Advantages" />
 			<div className="grid grid-cols-5 gap-x-[50px]">
 				<SkillsCard number={10} />
+				<SkillsCard number={10} />
 			</div>
 		</section>
 	)
