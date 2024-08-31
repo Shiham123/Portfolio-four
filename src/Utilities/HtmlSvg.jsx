@@ -1,7 +1,7 @@
 import {useSelector} from "react-redux"
 
 const HtmlSvg = () => {
-	const {fillColor} = useSelector((state) => state.theme)
+	const {fillColor} = useSelector((state) => state.icon)
 
 	return (
 		<div>
