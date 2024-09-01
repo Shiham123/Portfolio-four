@@ -14,5 +14,4 @@ export default LeftHeader
 
 LeftHeader.propTypes = {
 	headingText: PropTypes.string.isRequired,
-	githubUrl: PropTypes.string.isRequired,
 }
