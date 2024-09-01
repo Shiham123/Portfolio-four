@@ -1,12 +1,12 @@
 import {useSelector} from "react-redux"
 
 const HtmlSvg = () => {
-	const {fillColor} = useSelector((state) => state.icon)
+	const {fillColor, id} = useSelector((state) => state.icon)
 
 	return (
 		<div>
 			<svg
-				fill={fillColor}
+				fill={id === 1 ? fillColor : undefined}
 				version="1.1"
 				xmlns="http://www.w3.org/2000/svg"
 				width="100px"
