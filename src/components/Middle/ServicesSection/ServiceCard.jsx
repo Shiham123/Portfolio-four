@@ -36,5 +36,5 @@ ServiceCard.propTypes = {
 	headingText: PropTypes.string.isRequired,
 	paraText: PropTypes.string.isRequired,
 	hyperText: PropTypes.string.isRequired,
-	Icon: PropTypes.element.isRequired,
+	Icon: PropTypes.func.isRequired,
 }

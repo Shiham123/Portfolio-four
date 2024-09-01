@@ -6,6 +6,7 @@ import SkillsCard from "./SkillCard"
 
 // Svg
 import HtmlSvg from "../../../Utilities/HtmlSvg"
+import ScssSvg from "../../../Utilities/ScssSvg"
 
 const Advantage = () => {
 	return (
@@ -18,6 +19,7 @@ const Advantage = () => {
 
 			<div className="grid grid-cols-5 gap-x-[50px]">
 				<SkillsCard number={10} Icon={HtmlSvg} />
+				{/* <SkillsCard number={10} Icon={ScssSvg} /> */}
 			</div>
 		</section>
 	)

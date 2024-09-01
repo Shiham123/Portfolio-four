@@ -15,5 +15,5 @@ export default LittleHeading
 
 LittleHeading.propTypes = {
 	headingText: PropTypes.string.isRequired,
-	Icon: PropTypes.element.isRequired,
+	Icon: PropTypes.func.isRequired,
 }
