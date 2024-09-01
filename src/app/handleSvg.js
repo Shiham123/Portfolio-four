@@ -2,13 +2,15 @@ import {createSlice} from "@reduxjs/toolkit"
 
 const iconSlice = createSlice({
 	name: "svg",
-	initialState: {fillColor: "#565656"},
+	initialState: {fillColor: "#565656", id: 0},
 	reducers: {
-		setFillColor: (state, {payload}) => {
-			state.fillColor = payload
+		setFillColorId: (state, {payload}) => {
+			const {color, id} = payload
+			state.fillColor = color
+			state.id = id
 		},
 	},
 })
 
-export const {setFillColor} = iconSlice.actions
+export const {setFillColorId} = iconSlice.actions
 export default iconSlice.reducer

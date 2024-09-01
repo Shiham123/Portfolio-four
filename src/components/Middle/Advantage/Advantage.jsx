@@ -18,8 +18,8 @@ const Advantage = () => {
 			{/* card Block */}
 
 			<div className="grid grid-cols-5 gap-x-[50px]">
-				<SkillsCard number={10} Icon={HtmlSvg} />
-				{/* <SkillsCard number={10} Icon={ScssSvg} /> */}
+				<SkillsCard number={10} Icon={HtmlSvg} Id={1} />
+				<SkillsCard number={10} Icon={ScssSvg} Id={2} />
 			</div>
 		</section>
 	)

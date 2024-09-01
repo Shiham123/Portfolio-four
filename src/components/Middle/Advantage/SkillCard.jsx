@@ -1,18 +1,18 @@
 import PropTypes from "prop-types"
 import {useDispatch} from "react-redux"
-import {setFillColor} from "../../../app/handleSvg"
+import {setFillColorId} from "../../../app/handleSvg"
 
 const SkillsCard = (props) => {
 	const dispatch = useDispatch()
 
-	const {number, Icon} = props
+	const {number, Icon, Id} = props
 
 	const handleMouseEnter = () => {
-		dispatch(setFillColor("#28e98c"))
+		dispatch(setFillColorId({color: "#28e98c", id: Id}))
 	}
 
 	const handleMouseOut = () => {
-		dispatch(setFillColor("#565656"))
+		dispatch(setFillColorId({color: "#565656", id: Id}))
 	}
 
 	return (
@@ -34,4 +34,5 @@ export default SkillsCard
 SkillsCard.propTypes = {
 	number: PropTypes.number.isRequired,
 	Icon: PropTypes.any.isRequired,
+	Id: PropTypes.number.isRequired,
 }
