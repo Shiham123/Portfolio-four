@@ -5,8 +5,9 @@ import SubHeading from "../../../Shared/SubHeading"
 import SkillsCard from "./SkillCard"
 
 // Svg
-import HtmlSvg from "../../../Utilities/HtmlSvg"
-import ScssSvg from "../../../Utilities/ScssSvg"
+import HtmlSvgFile from "../../../Utilities/HtmlSvgFile"
+import ScssSvgFile from "../../../Utilities/ScssSvgFile"
+import TailwindcssSvgFile from "../../../Utilities/TailwindcssSvgFile"
 
 const Advantage = () => {
 	return (
@@ -17,9 +18,10 @@ const Advantage = () => {
 
 			{/* card Block */}
 
-			<div className="grid grid-cols-5 gap-x-[50px]">
-				<SkillsCard number={10} Icon={HtmlSvg} Id={1} />
-				<SkillsCard number={10} Icon={ScssSvg} Id={2} />
+			<div className="grid grid-cols-5 gap-x-[50px] mt-[1.5rem]">
+				<SkillsCard number={100} Icon={HtmlSvgFile} Id={1} />
+				<SkillsCard number={100} Icon={ScssSvgFile} Id={2} />
+				<SkillsCard number={100} Icon={TailwindcssSvgFile} Id={2} />
 			</div>
 		</section>
 	)
