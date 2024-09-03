@@ -21,7 +21,7 @@ const Advantage = () => {
 			<div className="grid grid-cols-5 gap-x-[50px] mt-[1.5rem]">
 				<SkillsCard number={100} Icon={HtmlSvgFile} Id={1} />
 				<SkillsCard number={100} Icon={ScssSvgFile} Id={2} />
-				<SkillsCard number={100} Icon={TailwindcssSvgFile} Id={2} />
+				<SkillsCard number={100} Icon={TailwindcssSvgFile} Id={3} />
 			</div>
 		</section>
 	)
