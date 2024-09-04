@@ -23,7 +23,13 @@ export default {
 			bgSidebar: "#191919",
 			sidebarText: "#8f8f8f",
 		},
-		extend: {fontFamily: {Inter: ["Inter", "sans-serif"], Poppins: ["Poppins", "sans-serif"]}},
+		extend: {
+			fontFamily: {
+				Inter: ["Inter", "sans-serif"],
+				Poppins: ["Poppins", "sans-serif"],
+				OpenSans: ["Open-Sans", "sans-serif"],
+			},
+		},
 	},
 	plugins: [],
 }

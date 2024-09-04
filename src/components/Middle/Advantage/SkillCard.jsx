@@ -10,18 +10,20 @@ const SkillsCard = (props) => {
 	const handleMouseOut = () => dispatch(setFillColorId({color: "#565656", id: Id}))
 
 	return (
-		<div className="flex flex-col justify-start items-center">
+		<div className="flex flex-col justify-start items-center gap-4">
 			<div
 				className="border-[2px] border-primaryBorder flex flex-col justify-start items-center rounded-[85px] hover:border-secondary group transition-all duration-300 ease-in-out pt-[54px] pb-[48px]"
 				onMouseEnter={handleMouseEnter}
 				onMouseLeave={handleMouseOut}
 			>
 				<Icon />
-				<span className="text-[30px] font-light text-secondary group-hover:text-[#ffffff] mt-[1rem]">
+				<span className="text-[30px] font-light text-secondary group-hover:text-primaryFont mt-[1rem]">
 					{number}%
 				</span>
 			</div>
-			<p className="font-Poppins">{skillName}</p>
+			<p className="font-Poppins text-2xl text-primaryFont font-light uppercase tracking-widest leading-10 hover:scale-105 transition-transform duration-300">
+				{skillName}
+			</p>
 		</div>
 	)
 }

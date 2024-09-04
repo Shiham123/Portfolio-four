@@ -19,7 +19,7 @@ const Advantage = () => {
 
 			{/* card Block */}
 
-			<div className="grid grid-cols-4 justify-items-start">
+			<div className="grid grid-cols-4 justify-items-start mt-10">
 				<SkillsCard number={100} Icon={HtmlSvgFile} Id={1} skillName="Html" />
 				<SkillsCard number={100} Icon={ScssSvgFile} Id={2} skillName="scss" />
 				<SkillsCard number={100} Icon={TailwindcssSvgFile} Id={3} skillName="tailwindcss" />
