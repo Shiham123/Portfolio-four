@@ -4,8 +4,8 @@ const TailwindcssSvgFile = () => {
 	const {fillColor, id} = useSelector((state) => state.icon)
 	return (
 		<svg
-			width="100px"
-			height="100px"
+			width="170px"
+			height="120px"
 			viewBox="0 0 15 15"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

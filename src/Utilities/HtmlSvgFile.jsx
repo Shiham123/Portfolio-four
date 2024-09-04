@@ -9,8 +9,8 @@ const HtmlSvgFile = () => {
 			fill={id === 1 ? fillColor : "#565656"}
 			version="1.1"
 			xmlns="http://www.w3.org/2000/svg"
-			width="100px"
-			height="100px"
+			width="170px"
+			height="120px"
 			viewBox="0 0 512 512"
 		>
 			<g id="c133de6af664cd4f011a55de6b000d0b">

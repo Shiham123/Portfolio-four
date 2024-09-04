@@ -8,6 +8,7 @@ import SkillsCard from "./SkillCard"
 import HtmlSvgFile from "../../../Utilities/HtmlSvgFile"
 import ScssSvgFile from "../../../Utilities/ScssSvgFile"
 import TailwindcssSvgFile from "../../../Utilities/TailwindcssSvgFile"
+import BootstrapSvgFile from "../../../Utilities/BootstrapSvgFile"
 
 const Advantage = () => {
 	return (
@@ -18,10 +19,11 @@ const Advantage = () => {
 
 			{/* card Block */}
 
-			<div className="grid grid-cols-5 gap-x-[50px] mt-[1.5rem]">
-				<SkillsCard number={100} Icon={HtmlSvgFile} Id={1} />
-				<SkillsCard number={100} Icon={ScssSvgFile} Id={2} />
-				<SkillsCard number={100} Icon={TailwindcssSvgFile} Id={3} />
+			<div className="grid grid-cols-4 justify-items-start">
+				<SkillsCard number={100} Icon={HtmlSvgFile} Id={1} skillName="Html" />
+				<SkillsCard number={100} Icon={ScssSvgFile} Id={2} skillName="scss" />
+				<SkillsCard number={100} Icon={TailwindcssSvgFile} Id={3} skillName="tailwindcss" />
+				<SkillsCard number={100} Icon={BootstrapSvgFile} Id={4} skillName="bootstrap" />
 			</div>
 		</section>
 	)
