@@ -10,7 +10,7 @@ const SkillsCard = (props) => {
 	const handleMouseOut = () => dispatch(setFillColorId({color: "#565656", id: Id}))
 
 	return (
-		<div className="flex flex-col justify-start items-center gap-4">
+		<div className="flex flex-col justify-start items-center">
 			<div
 				className="border-[2px] border-primaryBorder flex flex-col justify-start items-center rounded-[85px] hover:border-secondary group transition-all duration-300 ease-in-out pt-[54px] pb-[48px]"
 				onMouseEnter={handleMouseEnter}
