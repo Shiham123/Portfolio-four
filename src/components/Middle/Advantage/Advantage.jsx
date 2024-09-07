@@ -10,6 +10,8 @@ import ScssSvgFile from "../../../Utilities/ScssSvgFile"
 import TailwindcssSvgFile from "../../../Utilities/TailwindcssSvgFile"
 import BootstrapSvgFile from "../../../Utilities/BootstrapSvgFile"
 import JsSvgFile from "../../../Utilities/JsSvgFile"
+import ReactSvgFile from "../../../Utilities/ReactSvgFile"
+import NextSvgFile from "../../../Utilities/NextSvgFile"
 
 const skillsDataArrayOne = [
 	{number: 100, Icon: HtmlSvgFile, Id: 1, skillName: "html"},
@@ -18,7 +20,11 @@ const skillsDataArrayOne = [
 	{number: 100, Icon: BootstrapSvgFile, Id: 4, skillName: "Bootstrap"},
 ]
 
-const skillsDataArrayTwo = [{number: 100, Icon: JsSvgFile, Id: 5, skillName: "javaScript"}]
+const skillsDataArrayTwo = [
+	{number: 100, Icon: JsSvgFile, Id: 5, skillName: "javaScript"},
+	{number: 100, Icon: ReactSvgFile, Id: 6, skillName: "ReactJs"},
+	{number: 100, Icon: NextSvgFile, Id: 7, skillName: "nextJs"},
+]
 
 const Advantage = () => {
 	return (
