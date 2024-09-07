@@ -12,6 +12,11 @@ import BootstrapSvgFile from "../../../Utilities/BootstrapSvgFile"
 import JsSvgFile from "../../../Utilities/JsSvgFile"
 import ReactSvgFile from "../../../Utilities/ReactSvgFile"
 import NextSvgFile from "../../../Utilities/NextSvgFile"
+import ReduxSvgFile from "../../../Utilities/ReduxSvgFile"
+import WordPressSvgFile from "../../../Utilities/WordPressSvgFile"
+import ElementorSvgFile from "../../../Utilities/ElementorSvgFile"
+import WebflowSvgFile from "../../../Utilities/WebflowSvgFile"
+import FramerSvgFile from "../../../Utilities/FramerSvgFile"
 
 const skillsDataArrayOne = [
 	{number: 100, Icon: HtmlSvgFile, Id: 1, skillName: "html"},
@@ -24,6 +29,14 @@ const skillsDataArrayTwo = [
 	{number: 100, Icon: JsSvgFile, Id: 5, skillName: "javaScript"},
 	{number: 100, Icon: ReactSvgFile, Id: 6, skillName: "ReactJs"},
 	{number: 100, Icon: NextSvgFile, Id: 7, skillName: "nextJs"},
+	{number: 100, Icon: ReduxSvgFile, Id: 8, skillName: "redux"},
+]
+
+const skillsDataArrayThree = [
+	{number: 100, Icon: WordPressSvgFile, Id: 9, skillName: "wordpress"},
+	{number: 100, Icon: ElementorSvgFile, Id: 10, skillName: "elementor"},
+	{number: 100, Icon: WebflowSvgFile, Id: 11, skillName: "webflow"},
+	{number: 100, Icon: FramerSvgFile, Id: 12, skillName: "framer"},
 ]
 
 const Advantage = () => {
@@ -49,6 +62,11 @@ const Advantage = () => {
 						skillName={skill.skillName}
 					/>
 				))}
+
+				{skillsDataArrayThree.map((perSkill) => {
+					const {Id, number, Icon, skillName} = perSkill
+					return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} />
+				})}
 			</div>
 		</section>
 	)
