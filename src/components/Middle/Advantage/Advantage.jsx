@@ -65,7 +65,7 @@ const Advantage = () => {
 
 				{skillsDataArrayThree.map((perSkill) => {
 					const {Id, number, Icon, skillName} = perSkill
-					return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} />
+					return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} Id={Id} />
 				})}
 			</div>
 		</section>
