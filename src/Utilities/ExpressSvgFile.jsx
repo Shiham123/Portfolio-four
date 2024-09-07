@@ -1,7 +1,11 @@
+import {useSelector} from "react-redux"
+
 const ExpressSvgFile = () => {
+	const {fillColor, id} = useSelector((state) => state.icon)
 	return (
 		<svg
-			fill="#000000"
+			className="transition-colors duration-300 ease-in-out"
+			fill={`${id === 15 ? fillColor : "#565656"}`}
 			width="170px"
 			height="120px"
 			viewBox="0 0 24 24"

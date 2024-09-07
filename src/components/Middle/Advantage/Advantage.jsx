@@ -43,7 +43,7 @@ const cmsSkillArrayOne = [
 	{number: 100, Icon: FramerSvgFile, Id: 12, skillName: "framer"},
 ]
 
-const backendSkillArray = [
+const backendSkillArrayOne = [
 	{number: 100, Icon: NodeSvgFile, Id: 13, skillName: "nodejs"},
 	{number: 100, Icon: JsonSvgFile, Id: 14, skillName: "json"},
 	{number: 100, Icon: ExpressSvgFile, Id: 15, skillName: "expressJs"},
@@ -74,7 +74,7 @@ const Advantage = () => {
 					/>
 				))}
 
-				{backendSkillArray.map((perSkill) => {
+				{backendSkillArrayOne.map((perSkill) => {
 					const {Id, number, Icon, skillName} = perSkill
 					return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} Id={Id} />
 				})}
