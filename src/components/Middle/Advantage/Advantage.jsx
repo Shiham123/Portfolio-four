@@ -24,6 +24,7 @@ import MongooseSvgFile from "../../../Utilities/MongooseSvgFile"
 import VscodeSvgFile from "../../../Utilities/VscodeSvgFile"
 import GitSvgFile from "../../../Utilities/GitSvgFile"
 import GithubSvgFile from "../../../Utilities/GithubSvgFile"
+import FirebaseSvgFile from "../../../Utilities/FirebaseSvgFile"
 
 const frontendSkillOne = [
 	{number: 100, Icon: HtmlSvgFile, Id: 1, skillName: "html"},
@@ -57,6 +58,7 @@ const toolsSkillArrayOne = [
 	{number: 100, Icon: VscodeSvgFile, Id: 17, skillName: "vscode"},
 	{number: 100, Icon: GitSvgFile, Id: 18, skillName: "git"},
 	{number: 100, Icon: GithubSvgFile, Id: 19, skillName: "github"},
+	{number: 100, Icon: FirebaseSvgFile, Id: 20, skillName: "firebase"},
 ]
 
 const Advantage = () => {
