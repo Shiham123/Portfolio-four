@@ -21,6 +21,9 @@ import NodeSvgFile from "../../../Utilities/NodeSvgFile"
 import JsonSvgFile from "../../../Utilities/JsonSvgFile"
 import ExpressSvgFile from "../../../Utilities/ExpressSvgFile"
 import MongooseSvgFile from "../../../Utilities/MongooseSvgFile"
+import VscodeSvgFile from "../../../Utilities/VscodeSvgFile"
+import GitSvgFile from "../../../Utilities/GitSvgFile"
+import GithubSvgFile from "../../../Utilities/GithubSvgFile"
 
 const frontendSkillOne = [
 	{number: 100, Icon: HtmlSvgFile, Id: 1, skillName: "html"},
@@ -48,6 +51,12 @@ const backendSkillArrayOne = [
 	{number: 100, Icon: JsonSvgFile, Id: 14, skillName: "json"},
 	{number: 100, Icon: ExpressSvgFile, Id: 15, skillName: "expressJs"},
 	{number: 100, Icon: MongooseSvgFile, Id: 16, skillName: "mongoose"},
+]
+
+const toolsSkillArrayOne = [
+	{number: 100, Icon: VscodeSvgFile, Id: 17, skillName: "vscode"},
+	{number: 100, Icon: GitSvgFile, Id: 18, skillName: "git"},
+	{number: 100, Icon: GithubSvgFile, Id: 19, skillName: "github"},
 ]
 
 const Advantage = () => {
@@ -82,6 +91,11 @@ const Advantage = () => {
 				{cmsSkillArrayOne.map((perSkill) => {
 					const {Id, number, Icon, skillName} = perSkill
 					return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} Id={Id} />
+				})}
+
+				{toolsSkillArrayOne.map((item) => {
+					const {Id, number, Icon, skillName} = item
+					return <SkillsCard key={Id} Id={Id} number={number} Icon={Icon} skillName={skillName} />
 				})}
 			</div>
 		</section>
