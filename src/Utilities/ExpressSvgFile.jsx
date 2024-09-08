@@ -6,8 +6,8 @@ const ExpressSvgFile = () => {
 		<svg
 			className="transition-colors duration-300 ease-in-out"
 			fill={`${id === 15 ? fillColor : "#565656"}`}
-			width="170px"
-			height="120px"
+			width="150px"
+			height="100px"
 			viewBox="0 0 24 24"
 			role="img"
 			xmlns="http://www.w3.org/2000/svg"

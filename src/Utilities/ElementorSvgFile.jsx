@@ -5,8 +5,8 @@ const ElementorSvgFile = () => {
 	return (
 		<svg
 			fill={`${id === 10 ? fillColor : "#565656"}`}
-			width="170px"
-			height="120px"
+			width="150px"
+			height="100px"
 			viewBox="0 0 14 14"
 			role="img"
 			focusable="false"

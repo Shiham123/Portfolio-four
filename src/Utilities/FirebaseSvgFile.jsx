@@ -6,8 +6,8 @@ const FirebaseSvgFile = () => {
 		<svg
 			className="transition-colors duration-300 ease-in-out"
 			fill={`${id === 20 ? fillColor : "#565656"}`}
-			width="170px"
-			height="120px"
+			width="150px"
+			height="100px"
 			viewBox="0 0 32 32"
 			version="1.1"
 			xmlns="http://www.w3.org/2000/svg"

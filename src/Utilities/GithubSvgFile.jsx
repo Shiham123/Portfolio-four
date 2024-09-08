@@ -4,8 +4,8 @@ const GithubSvgFile = () => {
 	const {fillColor, id} = useSelector((state) => state.icon)
 	return (
 		<svg
-			width="170px"
-			height="120px"
+			width="150px"
+			height="100px"
 			viewBox="0 0 20 20"
 			version="1.1"
 			xmlns="http://www.w3.org/2000/svg"

@@ -70,35 +70,46 @@ const Advantage = () => {
 
 			{/* card Block */}
 
-			<div className="grid grid-cols-4 justify-items-start mt-10 gap-y-[5rem]">
-				{frontendSkillOne.map((skill) => {
-					const {number, Icon, Id, skillName} = skill
-					return <SkillsCard key={Id} number={number} Icon={Icon} Id={Id} skillName={skillName} />
-				})}
-				{frontendSkillTwo.map((skill) => (
-					<SkillsCard
-						key={skill.Id}
-						number={skill.number}
-						Icon={skill.Icon}
-						Id={skill.Id}
-						skillName={skill.skillName}
-					/>
-				))}
+			<div className="flex flex-col gap-10">
+				<div className="grid grid-cols-4 justify-items-start">
+					{frontendSkillOne.map((skill) => {
+						const {number, Icon, Id, skillName} = skill
+						return <SkillsCard key={Id} number={number} Icon={Icon} Id={Id} skillName={skillName} />
+					})}
+				</div>
 
-				{backendSkillArrayOne.map((perSkill) => {
-					const {Id, number, Icon, skillName} = perSkill
-					return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} Id={Id} />
-				})}
+				<div className="grid grid-cols-4 justify-items-start">
+					{frontendSkillTwo.map((skill) => (
+						<SkillsCard
+							key={skill.Id}
+							number={skill.number}
+							Icon={skill.Icon}
+							Id={skill.Id}
+							skillName={skill.skillName}
+						/>
+					))}
+				</div>
 
-				{cmsSkillArrayOne.map((perSkill) => {
-					const {Id, number, Icon, skillName} = perSkill
-					return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} Id={Id} />
-				})}
+				<div className="grid grid-cols-4 justify-items-start">
+					{backendSkillArrayOne.map((perSkill) => {
+						const {Id, number, Icon, skillName} = perSkill
+						return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} Id={Id} />
+					})}
+				</div>
 
-				{toolsSkillArrayOne.map((item) => {
-					const {Id, number, Icon, skillName} = item
-					return <SkillsCard key={Id} Id={Id} number={number} Icon={Icon} skillName={skillName} />
-				})}
+				<div className="grid grid-cols-4 justify-items-start">
+					{cmsSkillArrayOne.map((perSkill) => {
+						const {Id, number, Icon, skillName} = perSkill
+						return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} Id={Id} />
+					})}
+				</div>
+
+				<div className="grid grid-cols-4 justify-items-start">
+					{toolsSkillArrayOne.map((item) => {
+						const {Id, number, Icon, skillName} = item
+						return <SkillsCard key={Id} Id={Id} number={number} Icon={Icon} skillName={skillName} />
+					})}
+				</div>
 			</div>
 		</section>
 	)

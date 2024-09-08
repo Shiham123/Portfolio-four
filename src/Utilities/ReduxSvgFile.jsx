@@ -4,8 +4,8 @@ const ReduxSvgFile = () => {
 	const {fillColor, id} = useSelector((state) => state.icon)
 	return (
 		<svg
-			width="170px"
-			height="120px"
+	width="150px"
+			height="100px"
 			viewBox="0 0 32 32"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
