@@ -65,20 +65,19 @@ const Advantage = () => {
 	return (
 		<section className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:px-[10%] mt-[15%] my-[10rem]">
 			<LittleHeading headingText="my skills" Icon={LuShapes} />
-
 			<SubHeading mainText="My" spanText="Advantages" />
 
 			{/* card Block */}
 
 			<div className="flex flex-col gap-10">
-				<div className="grid grid-cols-4 justify-items-start">
+				<div className="2xl:grid 2xl:grid-cols-4 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
 					{frontendSkillOne.map((skill) => {
 						const {number, Icon, Id, skillName} = skill
 						return <SkillsCard key={Id} number={number} Icon={Icon} Id={Id} skillName={skillName} />
 					})}
 				</div>
 
-				<div className="grid grid-cols-4 justify-items-start">
+				<div className="2xl:grid 2xl:grid-cols-4 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
 					{frontendSkillTwo.map((skill) => (
 						<SkillsCard
 							key={skill.Id}
@@ -90,21 +89,21 @@ const Advantage = () => {
 					))}
 				</div>
 
-				<div className="grid grid-cols-4 justify-items-start">
+				<div className="2xl:grid 2xl:grid-cols-4 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
 					{backendSkillArrayOne.map((perSkill) => {
 						const {Id, number, Icon, skillName} = perSkill
 						return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} Id={Id} />
 					})}
 				</div>
 
-				<div className="grid grid-cols-4 justify-items-start">
+				<div className="2xl:grid 2xl:grid-cols-4 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
 					{cmsSkillArrayOne.map((perSkill) => {
 						const {Id, number, Icon, skillName} = perSkill
 						return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} Id={Id} />
 					})}
 				</div>
 
-				<div className="grid grid-cols-4 justify-items-start">
+				<div className="2xl:grid 2xl:grid-cols-4 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
 					{toolsSkillArrayOne.map((item) => {
 						const {Id, number, Icon, skillName} = item
 						return <SkillsCard key={Id} Id={Id} number={number} Icon={Icon} skillName={skillName} />
