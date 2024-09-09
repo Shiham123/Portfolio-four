@@ -8,18 +8,20 @@ const ProjectSection = () => {
 			<LittleHeading headingText="portfolio" Icon={FaGripVertical} />
 			<SubHeading mainText="my" spanText="projects" />
 
-			<div className="relative z-10">
+			<div className="relative z-10 group cursor-pointer">
 				<img
 					className="rounded-[20px] bg-cover bg-center"
 					src="/src/assets/project 01.webp"
 					alt=""
 				/>
 
-				<div className="absolute bottom-7 left-[15%] transform -translate-x-1/2 -translate-y-1/2 text-white z-20">
+				<div className="hidden group-hover:block absolute bottom-7 left-[5%] z-30">
 					<h1 className="bg-secondary text-primary px-10 py-2 font-OpenSans text-2xl rounded-[20px]">
 						My Portfolio
 					</h1>
 				</div>
+
+				<div className="hidden group-hover:block absolute inset-0 w-[100%] h-[100%] bg-primary/80 z-20"></div>
 			</div>
 		</div>
 	)
