@@ -4,6 +4,7 @@ import Experience from "./EducationExperience/Experience"
 import Introduction from "./Introduction/Introduction"
 import ProjectSection from "./Project/ProjectSection"
 import ServicesSection from "./ServicesSection/ServicesSection"
+import TestimonialSection from "./Testimonial/TestimonialSection"
 
 const MiddleSection = () => {
 	return (
@@ -14,6 +15,7 @@ const MiddleSection = () => {
 			<ServicesSection />
 			<Advantage />
 			<ProjectSection />
+			<TestimonialSection />
 		</section>
 	)
 }
