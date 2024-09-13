@@ -10,8 +10,20 @@ const TestimonialCard = (props) => {
 		reviewerFacebook,
 		reviewerWhatsapp,
 		reviewerLinkedin,
+		reviewerMail,
 	} = props
-	return <div></div>
+	return (
+		<div>
+			<p>{reviewerText}</p>
+			<p>{reviewerName}</p>
+			<p>{reviewerDesignation}</p>
+			<p>{reviewerFacebook}</p>
+			<p>{reviewerWhatsapp}</p>
+			<p>{reviewerLinkedin}</p>
+			<p>{reviewerMail}</p>
+			<img src={reviewerImage} alt="" />
+		</div>
+	)
 }
 
 export default TestimonialCard
@@ -24,4 +36,6 @@ TestimonialCard.propTypes = {
 	reviewerFacebook: string.isRequired,
 	reviewerWhatsapp: string.isRequired,
 	reviewerLinkedin: string.isRequired,
+	reviewerCompany: string.isRequired,
+	reviewerMail: string.isRequired,
 }
