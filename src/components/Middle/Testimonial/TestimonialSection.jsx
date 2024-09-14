@@ -24,7 +24,15 @@ const TestimonialSection = () => {
 
 			{status === "succeeded" ? (
 				data.map((item) => {
-					const {id, reviewerText, reviewerImage, reviewerDesignation, reviewerName} = item
+					const {
+						id,
+						reviewerText,
+						reviewerImage,
+						reviewerDesignation,
+						reviewerName,
+						reviewerCompanyName,
+						reviewerCompanyLink,
+					} = item
 					return (
 						<TestimonialCard
 							key={id}
@@ -32,6 +40,8 @@ const TestimonialSection = () => {
 							reviewerImage={reviewerImage}
 							reviewerName={reviewerName}
 							reviewerDesignation={reviewerDesignation}
+							reviewerCompanyName={reviewerCompanyName}
+							reviewerCompanyLink={reviewerCompanyLink}
 						/>
 					)
 				})
