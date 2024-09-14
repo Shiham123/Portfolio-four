@@ -1,5 +1,5 @@
 import {FaLinkedin, FaGithub, FaWhatsapp, FaDiscord} from "react-icons/fa"
-import PerIcon from "./PerIcon"
+import PerIcon from "../../Shared/PerIcon"
 
 const LeftSideIcons = () => {
 	return (

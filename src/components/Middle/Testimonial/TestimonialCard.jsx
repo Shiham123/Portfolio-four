@@ -1,17 +1,10 @@
 import PropTypes from "prop-types"
 const {string, element} = PropTypes
 
-import {
-	FaTwitter,
-	FaFacebookF,
-	FaWhatsapp,
-	FaTelegram,
-	FaGithub,
-	FaLinkedinIn,
-} from "react-icons/fa"
+import {FaTwitter, FaWhatsapp, FaTelegram, FaGithub, FaLinkedin} from "react-icons/fa"
 import {IoMailUnreadOutline} from "react-icons/io5"
 
-import TestimonialSocialIcon from "./TestimonialSocialIcon"
+import PerIcon from "../../../Shared/PerIcon"
 
 const TestimonialCard = (props) => {
 	const {
@@ -53,13 +46,12 @@ const TestimonialCard = (props) => {
 
 			{/* icon block */}
 			<div className="flex gap-3">
-				<TestimonialSocialIcon Icon={FaTwitter} />
-				<TestimonialSocialIcon Icon={FaFacebookF} />
-				<TestimonialSocialIcon Icon={FaWhatsapp} />
-				<TestimonialSocialIcon Icon={FaTelegram} />
-				<TestimonialSocialIcon Icon={FaGithub} />
-				<TestimonialSocialIcon Icon={FaLinkedinIn} />
-				<TestimonialSocialIcon Icon={IoMailUnreadOutline} />
+				<PerIcon Icon={FaTwitter} />
+				<PerIcon Icon={FaWhatsapp} />
+				<PerIcon Icon={FaTelegram} />
+				<PerIcon Icon={FaGithub} />
+				<PerIcon Icon={FaLinkedin} />
+				<PerIcon Icon={IoMailUnreadOutline} />
 			</div>
 		</div>
 	)

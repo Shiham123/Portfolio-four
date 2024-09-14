@@ -22,7 +22,8 @@ const PerIcon = ({Icon, link}) => {
 		<a href={link} target="_blank" rel="noopener noreferrer">
 			<Icon
 				size={iconSize}
-				className="text-[#565656] hover:text-hoverColor border-[2px] border-[#565656] p-2 rounded-custom hover:border-hoverColor hover:duration-300 hover:transition-all hover:ease-in-out cursor-pointer"
+				className="text-[#565656] p-2 hover:text-hoverColor border-[2px] border-[#565656]
+				rounded-custom hover:border-hoverColor hover:duration-300 hover:transition-all hover:ease-in-out cursor-pointer"
 			/>
 		</a>
 	)
