@@ -9,6 +9,8 @@ import {
 	FaGithub,
 	FaLinkedinIn,
 } from "react-icons/fa"
+import {IoMailUnreadOutline} from "react-icons/io5"
+
 import TestimonialSocialIcon from "./TestimonialSocialIcon"
 
 const TestimonialCard = (props) => {
@@ -17,42 +19,47 @@ const TestimonialCard = (props) => {
 		reviewerText,
 		reviewerName,
 		reviewerDesignation,
-		reviewerFacebook,
-		reviewerWhatsapp,
-		reviewerLinkedin,
-		reviewerMail,
 		reviewerCompanyName,
 		reviewerCompanyLink,
 	} = props
 	return (
-		<div className="space-y-[24px] border-2 border-primaryBorder p-[50px] rounded-[20px]">
+		<div className="space-y-[50px] border-2 border-primaryBorder p-[50px] rounded-[20px] group">
+			{/* reviewer info here */}
 			<div className="flex items-center gap-[2rem]">
 				<img src={reviewerImage} className="rounded-[100%]" width={70} height={70} alt="" />
 				<div className="space-y-2">
-					<p className="font-Poppins text-primaryFont text-xl">{reviewerName}</p>
-					<p className="font-Poppins text-primaryFont text-2xl">{reviewerDesignation}</p>
+					<p className="font-Poppins text-primaryFont text-xl hover:text-secondary">
+						{reviewerName}
+					</p>
+					<p className="font-Poppins text-primaryFont text-2xl hover:text-secondary">
+						{reviewerDesignation}
+					</p>
 				</div>
 			</div>
 
-			<p className="font-Inter text-primaryFont/70 text-2xl hover:text-secondary">{reviewerText}</p>
-			<p>{reviewerFacebook}</p>
-			<p>{reviewerWhatsapp}</p>
-			<p>{reviewerLinkedin}</p>
-			<p>{reviewerMail}</p>
-			<a href={reviewerCompanyLink} target="_blank">
-				<p className="font-OpenSans italic text-secondary tracking-widest">
-					I am working at {reviewerCompanyName}
+			{/* reviewer text here */}
+			<div className="flex flex-col gap-[16px]">
+				<p className="font-Inter text-primaryFont/70 text-2xl hover:text-secondary">
+					&quot;{reviewerText}&quot;
 				</p>
-			</a>
+
+				{/* reviewer job info here */}
+				<a href={reviewerCompanyLink} target="_blank" className="pt-[25px]">
+					<p className="font-OpenSans italic text-primaryFont group-hover:text-secondary tracking-widest">
+						I am working at {reviewerCompanyName}
+					</p>
+				</a>
+			</div>
 
 			{/* icon block */}
-			<div className="flex gap-2">
+			<div className="flex gap-3">
 				<TestimonialSocialIcon Icon={FaTwitter} />
 				<TestimonialSocialIcon Icon={FaFacebookF} />
 				<TestimonialSocialIcon Icon={FaWhatsapp} />
 				<TestimonialSocialIcon Icon={FaTelegram} />
 				<TestimonialSocialIcon Icon={FaGithub} />
 				<TestimonialSocialIcon Icon={FaLinkedinIn} />
+				<TestimonialSocialIcon Icon={IoMailUnreadOutline} />
 			</div>
 		</div>
 	)
