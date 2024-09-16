@@ -5,7 +5,7 @@ import {Pagination, Navigation} from "swiper/modules"
 // icon import
 import {BiMessageAltDetail} from "react-icons/bi"
 
-// redux built in method
+// redux built-in method
 import {useDispatch, useSelector} from "react-redux"
 
 // react method
@@ -36,36 +36,45 @@ const TestimonialSection = () => {
 			<SubHeading mainText="Trusted by my" spanText="most valued individuals" />
 
 			{status === "succeeded" ? (
-				<Swiper
-					pagination={{type: "fraction"}}
-					navigation={true}
-					modules={[Pagination, Navigation]}
-					className="mySwiper"
-				>
-					{data.map((item) => {
-						const {
-							id,
-							reviewerText,
-							reviewerImage,
-							reviewerDesignation,
-							reviewerName,
-							reviewerCompanyName,
-							reviewerCompanyLink,
-						} = item
-						return (
-							<SwiperSlide key={id}>
-								<TestimonialCard
-									reviewerText={reviewerText}
-									reviewerImage={reviewerImage}
-									reviewerName={reviewerName}
-									reviewerDesignation={reviewerDesignation}
-									reviewerCompanyName={reviewerCompanyName}
-									reviewerCompanyLink={reviewerCompanyLink}
-								/>
-							</SwiperSlide>
-						)
-					})}
-				</Swiper>
+				<>
+					{/* Custom Previous and Next Buttons */}
+					<div className="swiper-button-prev-custom">Prev</div>
+					<div className="swiper-button-next-custom">Next</div>
+
+					<Swiper
+						pagination={{type: "fraction"}}
+						navigation={{
+							prevEl: ".swiper-button-prev-custom",
+							nextEl: ".swiper-button-next-custom",
+						}}
+						modules={[Pagination, Navigation]}
+						className="mySwiper"
+					>
+						{data.map((item) => {
+							const {
+								id,
+								reviewerText,
+								reviewerImage,
+								reviewerDesignation,
+								reviewerName,
+								reviewerCompanyName,
+								reviewerCompanyLink,
+							} = item
+							return (
+								<SwiperSlide key={id}>
+									<TestimonialCard
+										reviewerText={reviewerText}
+										reviewerImage={reviewerImage}
+										reviewerName={reviewerName}
+										reviewerDesignation={reviewerDesignation}
+										reviewerCompanyName={reviewerCompanyName}
+										reviewerCompanyLink={reviewerCompanyLink}
+									/>
+								</SwiperSlide>
+							)
+						})}
+					</Swiper>
+				</>
 			) : (
 				<p>{error ? `Error: ${error}` : "Loading testimonials..."}</p>
 			)}
