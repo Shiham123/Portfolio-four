@@ -38,7 +38,7 @@ const TestimonialSection = () => {
 			{status === "succeeded" ? (
 				<>
 					{/* Custom Previous and Next Buttons */}
-					<div className="absolute bottom-0 flex">
+					<div className="absolute bottom-[-5rem] flex gap-4 items-center">
 						<div className="swiper-button-prev-custom border-2 border-primaryBorder p-3 rounded-[100%] cursor-pointer">
 							<svg
 								width="20px"
@@ -64,7 +64,7 @@ const TestimonialSection = () => {
 								</g>
 							</svg>
 						</div>
-						<div className="custom-pagination text-primaryFont bg-secondary"></div>
+						<div className="custom-pagination text-primaryFont"></div>
 
 						<div className="swiper-button-next-custom border-2 border-primaryBorder p-3 rounded-[100%] cursor-pointer">
 							<svg
