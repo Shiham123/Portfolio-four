@@ -1,6 +1,7 @@
 import About from "./About/About"
 import Advantage from "./Advantage/Advantage"
 import Experience from "./EducationExperience/Experience"
+import FormSection from "./Form/FormSection"
 import Introduction from "./Introduction/Introduction"
 import ProjectSection from "./Project/ProjectSection"
 import ServicesSection from "./ServicesSection/ServicesSection"
@@ -16,6 +17,7 @@ const MiddleSection = () => {
 			<Advantage />
 			<ProjectSection />
 			<TestimonialSection />
+			<FormSection />
 		</section>
 	)
 }
