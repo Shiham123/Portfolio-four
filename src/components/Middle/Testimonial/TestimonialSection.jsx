@@ -19,19 +19,21 @@ const TestimonialSection = () => {
 		dispatch(fetchTestimonial())
 	}, [dispatch])
 
-	useEffect(() => {
-		if (status === "succeeded") {
-			const interval = setInterval(() => {
-				setFadeIn(false)
-				setTimeout(() => {
-					setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length)
-					setFadeIn(true)
-				}, 500)
-			}, 3000)
+	const handlePrevious = () => {
+		setFadeIn(false)
+		setTimeout(() => {
+			setCurrentIndex((prevIndex) => (prevIndex === 0 ? data.length - 1 : prevIndex - 1))
+			setFadeIn(true)
+		}, 500)
+	}
 
-			return () => clearInterval(interval)
-		}
-	}, [data, status])
+	const handleNext = () => {
+		setFadeIn(false)
+		setTimeout(() => {
+			setCurrentIndex((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1))
+			setFadeIn(true)
+		}, 300)
+	}
 
 	const changeIconColor = (color, id) => {
 		dispatch(setFillColorId({color, id}))
@@ -48,17 +50,15 @@ const TestimonialSection = () => {
 						className={`transition-opacity duration-500 ${fadeIn ? "opacity-100" : "opacity-0"}`}
 					>
 						{data.length > 0 && (
-							<>
-								<TestimonialCard
-									key={data[currentIndex].id}
-									reviewerText={data[currentIndex].reviewerText}
-									reviewerImage={data[currentIndex].reviewerImage}
-									reviewerName={data[currentIndex].reviewerName}
-									reviewerDesignation={data[currentIndex].reviewerDesignation}
-									reviewerCompanyName={data[currentIndex].reviewerCompanyName}
-									reviewerCompanyLink={data[currentIndex].reviewerCompanyLink}
-								/>
-							</>
+							<TestimonialCard
+								key={data[currentIndex].id}
+								reviewerText={data[currentIndex].reviewerText}
+								reviewerImage={data[currentIndex].reviewerImage}
+								reviewerName={data[currentIndex].reviewerName}
+								reviewerDesignation={data[currentIndex].reviewerDesignation}
+								reviewerCompanyName={data[currentIndex].reviewerCompanyName}
+								reviewerCompanyLink={data[currentIndex].reviewerCompanyLink}
+							/>
 						)}
 					</div>
 				</div>
@@ -66,8 +66,11 @@ const TestimonialSection = () => {
 				<p>{error ? `Error: ${error}` : "Loading testimonials..."}</p>
 			)}
 
+			{/* Navigation icons */}
 			<div className="flex justify-start items-start gap-4">
+				{/* Previous icon */}
 				<div
+					onClick={() => handlePrevious()}
 					onMouseEnter={() => changeIconColor("#28e98c", "svg01")}
 					onMouseLeave={() => changeIconColor("#565656", "svg01")}
 					className="border-2 border-primaryBorder px-4 py-4 rounded-[100%] hover:border-secondary transition-all duration-300 cursor-pointer"
@@ -99,6 +102,7 @@ const TestimonialSection = () => {
 				</div>
 
 				<div
+					onClick={() => handleNext()}
 					onMouseEnter={() => changeIconColor("#28e98c", "svg02")}
 					onMouseLeave={() => changeIconColor("#565656", "svg02")}
 					className="border-2 border-primaryBorder px-4 py-4 rounded-[100%] cursor-pointer hover:border-secondary transition-all duration-300"
