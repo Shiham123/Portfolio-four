@@ -33,7 +33,9 @@ const TestimonialSection = () => {
 		}
 	}, [data, status])
 
-	const changeIconColor = () => {}
+	const changeIconColor = (color, id) => {
+		dispatch(setFillColorId({color, id}))
+	}
 
 	return (
 		<div className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:px-[10%] mt-[15%] my-[10rem] rounded-[20px] relative">
@@ -66,12 +68,8 @@ const TestimonialSection = () => {
 
 			<div className="flex justify-start items-start gap-4">
 				<div
-					onMouseOver={() => {
-						dispatch(setFillColorId({color: "#28e98c", id: "svg01"}))
-					}}
-					onMouseLeave={() => {
-						dispatch(setFillColorId({color: "#565656", id: "svg01"}))
-					}}
+					onMouseEnter={() => changeIconColor("#28e98c", "svg01")}
+					onMouseLeave={() => changeIconColor("#565656", "svg01")}
 					className="border-2 border-primaryBorder px-4 py-4 rounded-[100%] hover:border-secondary transition-all duration-300 cursor-pointer"
 				>
 					<svg
@@ -101,12 +99,8 @@ const TestimonialSection = () => {
 				</div>
 
 				<div
-					onMouseOver={() => {
-						dispatch(setFillColorId({color: "#28e98c", id: "svg02"}))
-					}}
-					onMouseLeave={() => {
-						dispatch(setFillColorId({color: "#565656", id: "svg02"}))
-					}}
+					onMouseEnter={() => changeIconColor("#28e98c", "svg02")}
+					onMouseLeave={() => changeIconColor("#565656", "svg02")}
 					className="border-2 border-primaryBorder px-4 py-4 rounded-[100%] cursor-pointer hover:border-secondary transition-all duration-300"
 				>
 					<svg
@@ -118,6 +112,7 @@ const TestimonialSection = () => {
 					>
 						<g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
 							<g
+								className="transition-all duration-300"
 								id="Dribbble-Light-Preview"
 								transform="translate(-305.000000, -6679.000000)"
 								fill={`${id === "svg02" ? fillColor : "#565656"}`}
