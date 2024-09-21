@@ -1,7 +1,7 @@
 import {createSlice, createAsyncThunk} from "@reduxjs/toolkit"
 
 const fetchTestimonial = createAsyncThunk("testimonial/fetchTestimonial", () => {
-	return fetch("/src/data/testimonialData.json").then((response) => response.json())
+	return fetch("/testimonialData.json").then((response) => response.json())
 })
 
 const testimonialSlice = createSlice({

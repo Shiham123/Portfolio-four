@@ -9,7 +9,7 @@
 		"reviewerWhatsapp": "0198992331",
 		"reviewerLinkedin": "www.linkedin.com",
 		"reviewerFacebook": "www.facebook.com",
-		"reviewerImage": "/src/assets/reviewer image 01.webp"
+		"reviewerImage": "/Images/reviewer image 01.webp"
 	},
 	{
 		"id": "t2",
@@ -21,7 +21,7 @@
 		"reviewerWhatsapp": "0198992331",
 		"reviewerLinkedin": "www.linkedin.com",
 		"reviewerFacebook": "www.facebook.com",
-		"reviewerImage": "/src/assets/reviewer image 01.webp"
+		"reviewerImage": "/Images/reviewer image 01.webp"
 	},
 	{
 		"id": "t3",
@@ -33,6 +33,6 @@
 		"reviewerWhatsapp": "0198992331",
 		"reviewerLinkedin": "www.linkedin.com",
 		"reviewerFacebook": "www.facebook.com",
-		"reviewerImage": "/src/assets/reviewer image 01.webp"
+		"reviewerImage": "/Images/reviewer image 01.webp"
 	}
 ]
