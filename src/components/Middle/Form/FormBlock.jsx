@@ -1,12 +1,15 @@
 import {useState} from "react"
 import {useDispatch, useSelector} from "react-redux"
-import {copyEmail, toggleModal} from "../../../app/modalSlice"
+
+// redux function
+import {copyEmail, hoverEmailTextToggle, toggleModal} from "../../../app/modalSlice"
 
 import Modal from "../../../Shared/Modal"
 
 const FormBlock = () => {
 	const {isCopied, isModalOpen} = useSelector((state) => state.modal)
 	const dispatch = useDispatch()
+
 	// state
 	const [formData, setFormData] = useState({})
 
@@ -30,6 +33,8 @@ const FormBlock = () => {
 				<h6
 					className="text-2xl text-secondary transition-all duration-300 py-12"
 					onClick={handleEmailCopy}
+					onMouseEnter={() => dispatch(hoverEmailTextToggle(true))}
+					onMouseLeave={() => dispatch(hoverEmailTextToggle(false))}
 				>
 					{isCopied ? (
 						<span className="cursor-text">Email Copied</span>
@@ -46,7 +51,7 @@ const FormBlock = () => {
 			</div>
 
 			{/* Modal */}
-			{isModalOpen ? <Modal /> : ""}
+			{isModalOpen && <Modal />}
 		</form>
 	)
 }
