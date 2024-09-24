@@ -1,8 +1,10 @@
 import {useState} from "react"
+import Modal from "../../../Shared/Modal"
 
 const FormBlock = () => {
 	const [formData, setFormData] = useState({})
 	const [isCopied, setIsCopied] = useState(false)
+	const [isModalOpen, setIsModalOpen] = useState(false)
 
 	const handleSubmit = (event) => event.preventDefault()
 
@@ -12,11 +14,16 @@ const FormBlock = () => {
 	}
 
 	const handleEmailCopy = () => {
-		if (setIsCopied === true) return
+		if (isCopied) return
 
 		navigator.clipboard.writeText("shihamibneyousuf@gmail.com").then(() => {
-			setIsCopied(true), setTimeout(() => setIsCopied(false), 5000)
+			setIsCopied(true)
+			setIsModalOpen(true)
 		})
+	}
+
+	const handleCloseModal = () => {
+		setIsModalOpen(false)
 	}
 
 	return (
@@ -24,20 +31,22 @@ const FormBlock = () => {
 			<div className="relative inline-block">
 				<h6
 					className={`cursor-pointer text-2xl text-secondary transition-all duration-300 py-12 ${
-						isCopied === true && "pointer-events-none"
+						isCopied && "pointer-events-none"
 					}`}
 					onClick={handleEmailCopy}
 				>
 					{isCopied ? "Email Copied" : "shihamibneyousuf@gmail.com"}
 				</h6>
-
-				<span className="absolute top-0 right-0 w-[100px] bg-secondary">Email Copied</span>
 			</div>
+
 			<div>
 				<label htmlFor="name">Name: </label>
-				<input type="text" name="name" value={formData.name} onChange={handleChange} />
+				<input type="text" name="name" value={formData.name || ""} onChange={handleChange} />
 				<button type="submit">Submit Data</button>
 			</div>
+
+			{/* Modal */}
+			<Modal isOpen={isModalOpen} onClose={handleCloseModal} />
 		</form>
 	)
 }
