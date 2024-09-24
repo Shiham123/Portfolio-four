@@ -4,7 +4,6 @@ import Modal from "../../../Shared/Modal"
 const FormBlock = () => {
 	const [formData, setFormData] = useState({})
 	const [isCopied, setIsCopied] = useState(false)
-	const [isModalOpen, setIsModalOpen] = useState(false)
 
 	const handleSubmit = (event) => event.preventDefault()
 
@@ -15,15 +14,7 @@ const FormBlock = () => {
 
 	const handleEmailCopy = () => {
 		if (isCopied) return
-
-		navigator.clipboard.writeText("shihamibneyousuf@gmail.com").then(() => {
-			setIsCopied(true)
-			setIsModalOpen(true)
-		})
-	}
-
-	const handleCloseModal = () => {
-		setIsModalOpen(false)
+		navigator.clipboard.writeText("shihamibneyousuf@gmail.com").then(() => setIsCopied(true))
 	}
 
 	return (
@@ -41,12 +32,12 @@ const FormBlock = () => {
 
 			<div>
 				<label htmlFor="name">Name: </label>
-				<input type="text" name="name" value={formData.name || ""} onChange={handleChange} />
+				<input type="text" name="name" value={formData.name} onChange={handleChange} />
 				<button type="submit">Submit Data</button>
 			</div>
 
 			{/* Modal */}
-			<Modal isOpen={isModalOpen} onClose={handleCloseModal} />
+			<Modal />
 		</form>
 	)
 }
