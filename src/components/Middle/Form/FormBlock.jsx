@@ -23,17 +23,23 @@ const FormBlock = () => {
         </span>
       </h6>
 
-      <div>
-        <label htmlFor="name" className="text-primaryFont font-Poppins">
-          Name:
-        </label>
-        <input
-          className="bg-transparent"
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
+      <div className="pt-10">
+        <div className="flex flex-col justify-center items-start gap-4">
+          <label
+            htmlFor="name"
+            className="text-primaryFont text-[18px] font-OpenSans uppercase"
+          >
+            Full Name:
+          </label>
+          <input
+            placeholder="your name"
+            className="bg-transparent capitalize"
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </div>
         <button type="submit">Submit Data</button>
       </div>
     </form>
