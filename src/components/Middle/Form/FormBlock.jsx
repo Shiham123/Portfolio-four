@@ -28,6 +28,7 @@ const FormBlock = () => {
           Name:
         </label>
         <input
+          className="bg-transparent"
           type="text"
           name="name"
           value={formData.name}
