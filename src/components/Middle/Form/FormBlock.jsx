@@ -2,14 +2,21 @@ import {useState} from "react"
 
 const FormBlock = () => {
 	const [formData, setFormData] = useState({name: "", email: ""})
+	const [error, setError] = useState("")
 
 	const handleInputChange = (event) => {
 		const {name, value} = event.target
 		setFormData({...formData, [name]: value})
+		setError("")
 	}
 
 	const handleSubmit = (event) => {
 		event.preventDefault()
+		setFormData({name: "", email: ""})
+
+		if (!formData.name) {
+			return setError("this field are required")
+		}
 	}
 
 	return (
@@ -33,14 +40,14 @@ const FormBlock = () => {
 							type="text"
 							name="name"
 							onChange={handleInputChange}
-							required
 						/>
+						{error && <p className="text-red-600 text-xl uppercase font-OpenSans">{error}</p>}
 					</div>
 
 					{/* email input field */}
-					<div className="flex flex-col w-1/2 gap-4">
+					{/* <div className="flex flex-col w-1/2 gap-4">
 						<label htmlFor="name" className="text-primaryFont text-[18px] font-OpenSans uppercase">
-							your email:
+							your email: 
 						</label>
 						<input
 							placeholder="Your full Name"
@@ -50,7 +57,7 @@ const FormBlock = () => {
 							onChange={handleInputChange}
 							required
 						/>
-					</div>
+					</div> */}
 				</div>
 			</div>
 
