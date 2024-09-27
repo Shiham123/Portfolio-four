@@ -3,11 +3,13 @@ import themeSlice from "./theme"
 import iconSlice from "./handleSvg"
 import logger from "redux-logger"
 import testimonialSlice from "./testimonialSlice"
+import fromSlice from "./formSlice"
 
 const rootReducer = combineReducers({
 	theme: themeSlice,
 	icon: iconSlice,
 	testimonial: testimonialSlice,
+	form: fromSlice,
 })
 
 const store = configureStore({

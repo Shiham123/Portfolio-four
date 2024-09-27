@@ -24,6 +24,6 @@ const testimonialSlice = createSlice({
 	},
 })
 
-export default testimonialSlice.reducer
 export {fetchTestimonial}
+export default testimonialSlice.reducer
 	
