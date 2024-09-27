@@ -7,16 +7,15 @@ const FormBlock = () => {
 	const handleInputChange = (event) => {
 		const {name, value} = event.target
 		setFormData({...formData, [name]: value})
-		setError("")
+		setError("") // Clear error when user starts typing
 	}
 
 	const handleSubmit = (event) => {
 		event.preventDefault()
-		setFormData({name: "", email: ""})
+		if (!formData.name) return setError("Full Name is required.")
+		setFormData({name: "", email: ""}), setError("")
 
-		if (!formData.name) {
-			return setError("this field are required")
-		}
+		console.log("form data", formData)
 	}
 
 	return (
@@ -29,7 +28,7 @@ const FormBlock = () => {
 
 			<div className="pt-10">
 				<div className="flex justify-start items-start gap-4">
-					{/* input field one */}
+					{/* Full Name input field */}
 					<div className="flex flex-col w-1/2 gap-4">
 						<label htmlFor="name" className="text-primaryFont text-[18px] font-OpenSans uppercase">
 							Full Name:
@@ -39,25 +38,26 @@ const FormBlock = () => {
 							className="bg-transparent text-[18px] hover:text-secondary focus:caret-white focus:outline-none text-white"
 							type="text"
 							name="name"
+							value={formData.name}
 							onChange={handleInputChange}
 						/>
 						{error && <p className="text-red-600 text-xl uppercase font-OpenSans">{error}</p>}
 					</div>
 
-					{/* email input field */}
+					{/* Email input field (commented out but available) */}
 					{/* <div className="flex flex-col w-1/2 gap-4">
-						<label htmlFor="name" className="text-primaryFont text-[18px] font-OpenSans uppercase">
-							your email: 
-						</label>
-						<input
-							placeholder="Your full Name"
-							className="bg-transparent text-[18px] hover:text-secondary focus:caret-transparent focus:outline-none text-white"
-							type="email"
-							name="email"
-							onChange={handleInputChange}
-							required
-						/>
-					</div> */}
+            <label htmlFor="email" className="text-primaryFont text-[18px] font-OpenSans uppercase">
+              Your Email:
+            </label>
+            <input
+              placeholder="Your email"
+              className="bg-transparent text-[18px] hover:text-secondary focus:caret-transparent focus:outline-none text-white"
+              type="email"
+              name="email"
+              value={formData.email} // Bind the input to state
+              onChange={handleInputChange}
+            />
+          </div> */}
 				</div>
 			</div>
 
