@@ -6,16 +6,13 @@ const FormBlock = () => {
 
 	const handleInputChange = (event) => {
 		const {name, value} = event.target
-		setFormData({...formData, [name]: value})
-		setError("") // Clear error when user starts typing
+		setFormData({...formData, [name]: value}), setError("")
 	}
 
 	const handleSubmit = (event) => {
 		event.preventDefault()
 		if (!formData.name) return setError("Full Name is required.")
 		setFormData({name: "", email: ""}), setError("")
-
-		console.log("form data", formData)
 	}
 
 	return (
