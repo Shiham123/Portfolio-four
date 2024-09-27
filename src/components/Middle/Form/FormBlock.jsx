@@ -1,7 +1,16 @@
-import InputField from "./InputField"
+import {useState} from "react"
 
 const FormBlock = () => {
-	const handleSubmit = (event) => event.preventDefault()
+	const [formData, setFormData] = useState({name: "", email: ""})
+
+	const handleInputChange = (event) => {
+		const {name, value} = event.target
+		setFormData({...formData, [name]: value})
+	}
+
+	const handleSubmit = (event) => {
+		event.preventDefault()
+	}
 
 	return (
 		<form onSubmit={handleSubmit}>
@@ -13,11 +22,44 @@ const FormBlock = () => {
 
 			<div className="pt-10">
 				<div className="flex justify-start items-start gap-4">
-					<InputField labelText="Full Name" placeholderText="Your Full Name" nameType="name" />
-					<InputField labelText="Email" placeholderText="Your Email Address" nameType="email" />
+					{/* input field one */}
+					<div className="flex flex-col w-1/2 gap-4">
+						<label htmlFor="name" className="text-primaryFont text-[18px] font-OpenSans uppercase">
+							Full Name:
+						</label>
+						<input
+							placeholder="Your full Name"
+							className="bg-transparent text-[18px] hover:text-secondary focus:caret-white focus:outline-none text-white"
+							type="text"
+							name="name"
+							onChange={handleInputChange}
+							required
+						/>
+					</div>
+
+					{/* email input field */}
+					<div className="flex flex-col w-1/2 gap-4">
+						<label htmlFor="name" className="text-primaryFont text-[18px] font-OpenSans uppercase">
+							your email:
+						</label>
+						<input
+							placeholder="Your full Name"
+							className="bg-transparent text-[18px] hover:text-secondary focus:caret-transparent focus:outline-none text-white"
+							type="email"
+							name="email"
+							onChange={handleInputChange}
+							required
+						/>
+					</div>
 				</div>
-				<button type="submit">Submit Data</button>
 			</div>
+
+			<button
+				type="submit"
+				className="mt-10 text-secondary border-2 border-primaryBorder px-8 py-2 rounded-custom hover:bg-secondary hover:text-primary hover:border-secondary text-[22px] transition-all duration-300 font-semibold"
+			>
+				Send Message
+			</button>
 		</form>
 	)
 }

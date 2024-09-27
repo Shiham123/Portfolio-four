@@ -4,7 +4,8 @@ import {useDispatch, useSelector} from "react-redux"
 import {hoverChange} from "../app/theme"
 import {useEffect, useState} from "react"
 
-const Button = ({text}) => {
+const Button = (props) => {
+	const {text, btnType} = props
 	const {isHover} = useSelector((state) => state.theme)
 	const dispatch = useDispatch()
 	const [iconSize, setIconSize] = useState(30)
@@ -19,6 +20,7 @@ const Button = ({text}) => {
 
 	return (
 		<button
+			type={btnType}
 			onMouseEnter={() => dispatch(hoverChange(true))}
 			onMouseLeave={() => dispatch(hoverChange(false))}
 			className="border-[1px] border-[#27e68a] 2xl:mb-12 xl:mb-6 2xl:py-4 xl:py-3 lg:mb-8 lg:py-3 md:py-3 md:my-4 sm:py-4 sm:my-6 xs:my-6 xs:py-4 xxs:py-4 xxs:my-4 mx-10 rounded-custom bg-[#27e68a] group hover:bg-primary flex justify-center items-center gap-4 hover:transition-all hover:duration-300 hover:ease-in-out"
@@ -33,4 +35,4 @@ const Button = ({text}) => {
 
 export default Button
 
-Button.propTypes = {text: PropTypes.string.isRequired}
+Button.propTypes = {text: PropTypes.string.isRequired, btnType: PropTypes.string.isRequired}
