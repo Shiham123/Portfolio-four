@@ -4,7 +4,11 @@ const ScssSvgFile = () => {
 	const {fillColor, id} = useSelector((state) => state.icon)
 
 	return (
-		<svg width="150px" height="100px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+		<svg
+			className="transition-colors duration-300 ease-in-out 2xl:w-[100px] xl:w-[100px] lg:w-[100px]"
+			viewBox="0 0 32 32"
+			xmlns="http://www.w3.org/2000/svg"
+		>
 			<path
 				className="transition-colors duration-300 ease-in-out"
 				d="M16,2A14,14,0,1,1,2,16,14,14,0,0,1,16,2Z"

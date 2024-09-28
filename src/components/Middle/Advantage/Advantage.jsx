@@ -70,7 +70,7 @@ const Advantage = () => {
 			{/* card Block */}
 
 			<div className="flex flex-col gap-10">
-				<div className="2xl:grid 2xl:grid-cols-4 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-3 gap-y-8 sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
+				<div className="2xl:flex xl:flex lg:flex md:grid md:grid-cols-4 sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
 					{frontendSkillOne.map((skill) => {
 						const {number, Icon, Id, skillName} = skill
 						return <SkillsCard key={Id} number={number} Icon={Icon} Id={Id} skillName={skillName} />
