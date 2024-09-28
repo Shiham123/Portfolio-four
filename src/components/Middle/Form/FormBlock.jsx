@@ -38,16 +38,33 @@ const FormBlock = () => {
 
 		// If any error exists, prevent submission
 		if (hasError) return
-
-		// Clear the form after successful submission
-		setFormData({name: "", email: "", phoneNumber: "", textArea: ""})
-		setError({name: "", email: "", phoneNumber: ""})
+		emailjs
+			.send(
+				"your_service_id", // EmailJS service ID
+				"your_template_id", // EmailJS template ID
+				{
+					from_name: formData.name,
+					from_email: formData.email,
+					phone_number: formData.phoneNumber,
+					message: formData.textArea,
+				},
+				"your_user_id", // EmailJS user ID
+			)
+			.then((response) => {
+				console.log("Email sent successfully:", response.status, response.text)
+				// Clear the form after successful submission
+				setFormData({name: "", email: "", phoneNumber: "", textArea: ""})
+				setError({name: "", email: "", phoneNumber: ""})
+			})
+			.catch((error) => {
+				console.error("Failed to send email:", error)
+			})
 	}
 
 	return (
 		<form onSubmit={handleSubmit}>
 			{/* Email link at the top */}
-			<h6 className="text-2xl text-secondary p-4 border-[1px] rounded-[24px] border-primaryBorder hover:bg-secondary hover:text-primary inline-block transition-all duration-300">
+			<h6 className="text-2xl mt-4 mb-4 text-secondary p-4 border-[1px] rounded-[24px] border-primaryBorder hover:bg-secondary hover:text-primary inline-block transition-all duration-300">
 				<span className="cursor-pointer italic">
 					<a href="mailto:shihamibneyousuf@gmail.com">shihamibneyousuf@gmail.com</a>
 				</span>
