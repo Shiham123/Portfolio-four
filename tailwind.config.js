@@ -32,6 +32,8 @@ export default {
 			fontSize: {
 				headingOne2xl: ["78px", "90px"],
 				headingOneXl: ["55px", "70px"],
+				headingOneLg: ["50px", "65px"],
+				headingOneMd: ["48px", "55px"],
 				paraOne: ["18px", "42px"],
 			},
 		},
