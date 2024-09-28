@@ -29,6 +29,11 @@ export default {
 				Poppins: ["Poppins", "sans-serif"],
 				OpenSans: ["Open-Sans", "sans-serif"],
 			},
+			fontSize: {
+				headingOne2xl: ["78px", "90px"],
+				headingOneXl: ["60px", "70px"],
+				paraOne: ["18px", "42px"],
+			},
 		},
 	},
 	plugins: [],

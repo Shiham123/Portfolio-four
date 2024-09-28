@@ -2,7 +2,9 @@ import PropTypes from "prop-types"
 
 const LittlePara = ({paraText}) => {
 	return (
-		<p className="text-paraColor py-4 leading-[30px] font-Inter text-[16px] w-[90%]">{paraText}</p>
+		<p className="2xl:text-paraOne xl:text-paraOne text-paraColor font-Inter 2xl:w-[90%] xl:w-full">
+			{paraText}
+		</p>
 	)
 }
 
