@@ -21,7 +21,7 @@ const TestimonialSection = () => {
 
 	const handlePrevious = () => {
 		setFadeIn(false)
-		setTimeout(() => {
+		setTimeout(() => { 
 			setCurrentIndex((prevIndex) => (prevIndex === 0 ? data.length - 1 : prevIndex - 1))
 			setFadeIn(true)
 		}, 500)
