@@ -30,7 +30,7 @@ export default {
 				OpenSans: ["Open-Sans", "sans-serif"],
 			},
 			fontSize: {
-				headingOne2xl: ["78px", "90px"],
+				headingOne2xl: ["65px", "90px"],
 				headingOneXl: ["55px", "70px"],
 				headingOneLg: ["50px", "65px"],
 				headingOneMd: ["48px", "55px"],

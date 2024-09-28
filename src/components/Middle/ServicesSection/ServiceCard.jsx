@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 
 const ServiceCard = ({headingText, paraText, hyperText, Icon}) => {
 	return (
-		<div className="grid grid-cols-8 border-[1px] border-primaryBorder w-10/12 h-fit rounded-custom p-8 hover:border-secondary transition-all duration-300 ease-in group">
+		<div className="grid grid-cols-8 border-[1px] border-primaryBorder 2xl:w-10/12 xl:w-10/12 lg:w-10/12 md:w-full h-fit rounded-custom p-8 hover:border-secondary transition-all duration-300 ease-in group">
 			{/* div one */}
 			<div className="col-span-6">
 				<h3 className="font-Inter text-primaryFont font-light tracking-wide capitalize text-2xl leading-10">
