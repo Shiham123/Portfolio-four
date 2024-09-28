@@ -2,7 +2,7 @@ import {useState} from "react"
 
 const FormBlock = () => {
 	// State to store form data
-	const [formData, setFormData] = useState({name: "", email: "", phoneNumber: ""})
+	const [formData, setFormData] = useState({name: "", email: "", phoneNumber: "", textArea: ""})
 	// State to store errors for each field
 	const [error, setError] = useState({name: "", email: "", phoneNumber: ""})
 
@@ -40,7 +40,7 @@ const FormBlock = () => {
 		if (hasError) return
 
 		// Clear the form after successful submission
-		setFormData({name: "", email: "", phoneNumber: ""})
+		setFormData({name: "", email: "", phoneNumber: "", textArea: ""})
 		setError({name: "", email: "", phoneNumber: ""})
 	}
 
@@ -114,6 +114,21 @@ const FormBlock = () => {
 					{error.phoneNumber && (
 						<p className="text-red-600 text-xl uppercase font-OpenSans">{error.phoneNumber}</p>
 					)}
+				</div>
+
+				{/* Text area Number input field */}
+				<div className="flex flex-col w-full gap-4 mt-12">
+					<label
+						htmlFor="textArea"
+						className="text-primaryFont text-[18px] font-OpenSans uppercase"
+					>
+						Your Message:
+					</label>
+					<textarea
+						name="textarea"
+						placeholder="your Personal Opinion"
+						className="bg-transparent text-[18px] hover:text-secondary focus:caret-white focus:outline-none text-white h-[300px] placeholder:capitalize resize-none"
+					></textarea>
 				</div>
 			</div>
 
