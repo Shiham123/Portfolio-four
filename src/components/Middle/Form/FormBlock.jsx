@@ -1,23 +1,52 @@
 import {useState} from "react"
 
 const FormBlock = () => {
+	// State to store form data
 	const [formData, setFormData] = useState({name: "", email: "", phoneNumber: ""})
-	const [error, setError] = useState("")
+	// State to store errors for each field
+	const [error, setError] = useState({name: "", email: "", phoneNumber: ""})
 
+	// Handles input field changes and clears the error for that specific field
 	const handleInputChange = (event) => {
 		const {name, value} = event.target
-		setFormData({...formData, [name]: value}), setError("")
+		setFormData({...formData, [name]: value})
+		setError({...error, [name]: ""}) // Clear specific error when typing
 	}
 
+	// Handles form submission and validation
 	const handleSubmit = (event) => {
-		event.preventDefault()
-		if (!formData.name) return setError("Full Name is required.")
-		if (!formData.phoneNumber) return setError("phone number is required")
-		setFormData({name: "", email: "", phoneNumber: ""}), setError("")
+		event.preventDefault() // Prevent form's default behavior
+		let hasError = false // Track if any error exists
+
+		// Validate name field
+		if (!formData.name) {
+			setError((prevError) => ({...prevError, name: "Full Name is required."}))
+			hasError = true
+		}
+
+		// Validate email field
+		if (!formData.email) {
+			setError((prevError) => ({...prevError, email: "Email is required."}))
+			hasError = true
+		}
+
+		// Validate phone number field
+		if (!formData.phoneNumber) {
+			setError((prevError) => ({...prevError, phoneNumber: "Phone Number is required."}))
+			hasError = true
+		}
+
+		// If any error exists, prevent submission
+		if (hasError) return
+
+		// Clear the form after successful submission
+		setFormData({name: "", email: "", phoneNumber: ""})
+		setError({name: "", email: "", phoneNumber: ""})
 	}
 
 	return (
 		<form onSubmit={handleSubmit}>
+			{/* Email link at the top */}
 			<h6 className="text-2xl text-secondary p-4 border-[1px] rounded-[24px] border-primaryBorder hover:bg-secondary hover:text-primary inline-block transition-all duration-300">
 				<span className="cursor-pointer italic">
 					<a href="mailto:shihamibneyousuf@gmail.com">shihamibneyousuf@gmail.com</a>
@@ -39,12 +68,15 @@ const FormBlock = () => {
 							value={formData.name}
 							onChange={handleInputChange}
 						/>
-						{error.name && <p className="text-red-600 text-xl uppercase font-OpenSans">{error}</p>}
+						{/* Error message for Full Name */}
+						{error.name && (
+							<p className="text-red-600 text-xl uppercase font-OpenSans">{error.name}</p>
+						)}
 					</div>
 
-					{/* Full Name input field */}
+					{/* Email input field */}
 					<div className="flex flex-col w-1/2 gap-4">
-						<label htmlFor="name" className="text-primaryFont text-[18px] font-OpenSans uppercase">
+						<label htmlFor="email" className="text-primaryFont text-[18px] font-OpenSans uppercase">
 							Email:
 						</label>
 						<input
@@ -55,26 +87,37 @@ const FormBlock = () => {
 							value={formData.email}
 							onChange={handleInputChange}
 						/>
-						{error && <p className="text-red-600 text-xl uppercase font-OpenSans">{error}</p>}
+						{/* Error message for Email */}
+						{error.email && (
+							<p className="text-red-600 text-xl uppercase font-OpenSans">{error.email}</p>
+						)}
 					</div>
 				</div>
 
+				{/* Phone Number input field */}
 				<div className="flex flex-col w-full gap-4 mt-12">
-					<label htmlFor="name" className="text-primaryFont text-[18px] font-OpenSans uppercase">
+					<label
+						htmlFor="phoneNumber"
+						className="text-primaryFont text-[18px] font-OpenSans uppercase"
+					>
 						Phone Number:
 					</label>
 					<input
-						placeholder="Your Email Address"
+						placeholder="Your Phone Number"
 						className="bg-transparent text-[18px] hover:text-secondary focus:caret-white focus:outline-none text-white"
-						type="number"
-						name="number"
+						type="text"
+						name="phoneNumber"
 						value={formData.phoneNumber}
 						onChange={handleInputChange}
 					/>
-					{error && <p className="text-red-600 text-xl uppercase font-OpenSans">{error}</p>}
+					{/* Error message for Phone Number */}
+					{error.phoneNumber && (
+						<p className="text-red-600 text-xl uppercase font-OpenSans">{error.phoneNumber}</p>
+					)}
 				</div>
 			</div>
 
+			{/* Submit button */}
 			<button
 				type="submit"
 				className="mt-10 text-secondary border-2 border-primaryBorder px-8 py-2 rounded-custom hover:bg-secondary hover:text-primary hover:border-secondary text-[22px] transition-all duration-300 font-semibold"
