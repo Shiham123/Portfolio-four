@@ -5,7 +5,7 @@ const ScssSvgFile = () => {
 
 	return (
 		<svg
-			className="transition-colors duration-300 ease-in-out 2xl:w-[100px] xl:w-[100px] lg:w-[100px]"
+			className="transition-colors duration-300 ease-in-out w-[100%]"
 			viewBox="0 0 32 32"
 			xmlns="http://www.w3.org/2000/svg"
 		>
