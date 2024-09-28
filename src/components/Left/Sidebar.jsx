@@ -52,7 +52,7 @@ const Sidebar = () => {
 			{isSidebarOpen && (
 				<div
 					onClick={handleSidebarClose}
-					className="2xl:hidden xl:hidden fixed top-0 left-0 w-full h-full bg-black z-10"
+					className="2xl:hidden xl:hidden fixed top-0 left-0 w-full h-full backdrop-blur-[3px] bg-primary/50 z-10"
 				></div>
 			)}
 

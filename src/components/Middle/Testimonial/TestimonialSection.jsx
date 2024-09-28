@@ -45,7 +45,7 @@ const TestimonialSection = () => {
 			<SubHeading mainText="Trusted by my" spanText="most valued individuals" />
 
 			{status === "succeeded" ? (
-				<div className="relative h-[550px] overflow-hidden">
+				<div className="relative h-[20%] overflow-hidden">
 					<div
 						className={`transition-opacity duration-500 ${fadeIn ? "opacity-100" : "opacity-0"}`}
 					>
@@ -67,7 +67,7 @@ const TestimonialSection = () => {
 			)}
 
 			{/* Navigation icons */}
-			<div className="flex justify-start items-start gap-4">
+			<div className="flex justify-start items-start gap-4 mt-[2%]">
 				{/* Previous icon */}
 				<div
 					onClick={() => handlePrevious()}
