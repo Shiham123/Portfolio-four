@@ -1,7 +1,7 @@
 import {useState} from "react"
 
 const FormBlock = () => {
-	const [formData, setFormData] = useState({name: "", email: ""})
+	const [formData, setFormData] = useState({name: "", email: "", phoneNumber: ""})
 	const [error, setError] = useState("")
 
 	const handleInputChange = (event) => {
@@ -12,7 +12,8 @@ const FormBlock = () => {
 	const handleSubmit = (event) => {
 		event.preventDefault()
 		if (!formData.name) return setError("Full Name is required.")
-		setFormData({name: "", email: ""}), setError("")
+		if (!formData.phoneNumber) return setError("phone number is required")
+		setFormData({name: "", email: "", phoneNumber: ""}), setError("")
 	}
 
 	return (
@@ -38,23 +39,39 @@ const FormBlock = () => {
 							value={formData.name}
 							onChange={handleInputChange}
 						/>
-						{error && <p className="text-red-600 text-xl uppercase font-OpenSans">{error}</p>}
+						{error.name && <p className="text-red-600 text-xl uppercase font-OpenSans">{error}</p>}
 					</div>
 
-					{/* Email input field (commented out but available) */}
-					{/* <div className="flex flex-col w-1/2 gap-4">
-            <label htmlFor="email" className="text-primaryFont text-[18px] font-OpenSans uppercase">
-              Your Email:
-            </label>
-            <input
-              placeholder="Your email"
-              className="bg-transparent text-[18px] hover:text-secondary focus:caret-transparent focus:outline-none text-white"
-              type="email"
-              name="email"
-              value={formData.email} // Bind the input to state
-              onChange={handleInputChange}
-            />
-          </div> */}
+					{/* Full Name input field */}
+					<div className="flex flex-col w-1/2 gap-4">
+						<label htmlFor="name" className="text-primaryFont text-[18px] font-OpenSans uppercase">
+							Email:
+						</label>
+						<input
+							placeholder="Your Email Address"
+							className="bg-transparent text-[18px] hover:text-secondary focus:caret-white focus:outline-none text-white"
+							type="email"
+							name="email"
+							value={formData.email}
+							onChange={handleInputChange}
+						/>
+						{error && <p className="text-red-600 text-xl uppercase font-OpenSans">{error}</p>}
+					</div>
+				</div>
+
+				<div className="flex flex-col w-full gap-4 mt-12">
+					<label htmlFor="name" className="text-primaryFont text-[18px] font-OpenSans uppercase">
+						Phone Number:
+					</label>
+					<input
+						placeholder="Your Email Address"
+						className="bg-transparent text-[18px] hover:text-secondary focus:caret-white focus:outline-none text-white"
+						type="number"
+						name="number"
+						value={formData.phoneNumber}
+						onChange={handleInputChange}
+					/>
+					{error && <p className="text-red-600 text-xl uppercase font-OpenSans">{error}</p>}
 				</div>
 			</div>
 
