@@ -10,9 +10,9 @@ const SkillsCard = (props) => {
 	const handleMouseOut = () => dispatch(setFillColorId({color: "#565656", id: Id}))
 
 	return (
-		<div className="flex flex-col justify-start items-start rounded-custom">
+		<div className="flex flex-col justify-start items-start rounded-custom hover:relative">
 			<div
-				className="border-[2px] border-primaryBorder flex flex-col justify-start rounded-custom items-center hover:border-secondary group transition-all duration-300 ease-in-out 2xl:px-[25px] 2xl:py-[50px] xl:px-[20px] xl:py-[20px] lg:px-[20px] lg:py-[20px]"
+				className="border-[2px] border-primaryBorder flex flex-col justify-start rounded-custom hover:rounded-tr-none hover:rounded-br-none items-center hover:border-secondary group transition-all duration-300 ease-in-out 2xl:px-[25px] 2xl:py-[50px] xl:px-[20px] xl:py-[20px] lg:px-[20px] lg:py-[20px]"
 				onMouseEnter={handleMouseEnter}
 				onMouseLeave={handleMouseOut}
 			>
@@ -21,7 +21,7 @@ const SkillsCard = (props) => {
 					{number}%
 				</span>
 			</div>
-			<div className="fixed bg-white top-0 left-0 w-full">
+			<div className="absolute bg-secondary top-0 right-[-35%] w-[35%] h-full rounded-tr-custom rounded-br-c">
 				<p className="font-Poppins 2xl:text-2xl xl:text-2xl lg:text-2xl md:text-[18px] mt-[10px] text-primaryFont font-light uppercase tracking-widest leading-10 hover:scale-105 transition-transform duration-300 hidden">
 					{skillName}
 				</p>
