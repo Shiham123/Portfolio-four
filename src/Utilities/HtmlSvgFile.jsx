@@ -5,7 +5,7 @@ const HtmlSvgFile = () => {
 
 	return (
 		<svg
-			className="transition-colors duration-300 ease-in-out w-[100%]"
+			className="transition-colors duration-300 ease-in-out w-[100%] h-[100%]"
 			fill={id === 1 ? fillColor : "#565656"}
 			version="1.1"
 			xmlns="http://www.w3.org/2000/svg"
