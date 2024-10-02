@@ -21,7 +21,7 @@ const SkillsCard = (props) => {
 					{number}%
 				</span>
 			</div>
-			<p className="font-Poppins 2xl:text-2xl xl:text-2xl lg:text-2xl md:text-[18px] mt-[10px] text-primaryFont font-light uppercase tracking-widest leading-10 transition-transform duration-300">
+			<p className="font-Poppins 2xl:text-2xl xl:text-2xl lg:text-2xl md:text-[18px] mt-[10px] text-primaryFont font-light uppercase tracking-widest leading-10 ">
 				{skillName}
 			</p>
 		</div>
