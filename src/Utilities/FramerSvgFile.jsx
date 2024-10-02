@@ -4,8 +4,7 @@ const FramerSvgFile = () => {
 	const {fillColor, id} = useSelector((state) => state.icon)
 	return (
 		<svg
-			width="150px"
-			height="100px"
+			className="transition-colors duration-300 ease-in-out w-[100%] h-[100%]"
 			viewBox="0 0 15 15"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

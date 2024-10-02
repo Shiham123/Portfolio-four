@@ -4,7 +4,11 @@ const WebflowSvgFile = () => {
 	const {fillColor, id} = useSelector((state) => state.icon)
 
 	return (
-		<svg width="150px" height="100px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+		<svg
+			className="transition-colors duration-300 ease-in-out w-[100%] h-[100%]"
+			viewBox="0 0 1024 1024"
+			xmlns="http://www.w3.org/2000/svg"
+		>
 			<circle
 				cx="512"
 				cy="512"

@@ -29,7 +29,7 @@ import FirebaseSvgFile from "../../../Utilities/FirebaseSvgFile"
 const frontendSkillOne = [
 	{number: 100, Icon: HtmlSvgFile, Id: 1, skillName: "html"},
 	{number: 100, Icon: ScssSvgFile, Id: 2, skillName: "scss"},
-	{number: 100, Icon: TailwindcssSvgFile, Id: 3, skillName: "tailwindcss"},
+	{number: 100, Icon: TailwindcssSvgFile, Id: 3, skillName: "tailwind"},
 	{number: 100, Icon: BootstrapSvgFile, Id: 4, skillName: "Bootstrap"},
 ]
 
@@ -77,7 +77,7 @@ const Advantage = () => {
 					})}
 				</div>
 
-				<div className="2xl:grid 2xl:grid-cols-4 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-3 sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
+				<div className="2xl:grid 2xl:grid-cols-4 2xl:gap-x-[10%] xl:flex xl:gap-[7%] lg:flex lg:gap-[8%] sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
 					{frontendSkillTwo.map((skill) => (
 						<SkillsCard
 							key={skill.Id}
@@ -89,21 +89,21 @@ const Advantage = () => {
 					))}
 				</div>
 
-				<div className="2xl:grid 2xl:grid-cols-4 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-3 sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
+				<div className="2xl:grid 2xl:grid-cols-4 2xl:gap-x-[10%] xl:flex xl:gap-[7%] lg:flex lg:gap-[8%] sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
 					{backendSkillArrayOne.map((perSkill) => {
 						const {Id, number, Icon, skillName} = perSkill
 						return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} Id={Id} />
 					})}
 				</div>
 
-				<div className="2xl:grid 2xl:grid-cols-4 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-3 sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
+				<div className="2xl:grid 2xl:grid-cols-4 2xl:gap-x-[10%] xl:flex xl:gap-[7%] lg:flex lg:gap-[8%] sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
 					{cmsSkillArrayOne.map((perSkill) => {
 						const {Id, number, Icon, skillName} = perSkill
 						return <SkillsCard key={Id} number={number} Icon={Icon} skillName={skillName} Id={Id} />
 					})}
 				</div>
 
-				<div className="2xl:grid 2xl:grid-cols-4 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-4 md:grid md:grid-cols-3 sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
+				<div className="2xl:grid 2xl:grid-cols-4 2xl:gap-x-[10%] xl:flex xl:gap-[7%] lg:flex lg:gap-[8%] sm:grid sm:grid-cols-2 xs:flex xs:flex-col xs:items-start xxs:flex xxs:flex-col xxs:items-start justify-items-start">
 					{toolsSkillArrayOne.map((item) => {
 						const {Id, number, Icon, skillName} = item
 						return <SkillsCard key={Id} Id={Id} number={number} Icon={Icon} skillName={skillName} />

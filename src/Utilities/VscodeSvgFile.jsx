@@ -4,7 +4,11 @@ const VscodeSvgFile = () => {
 	const {fillColor, id} = useSelector((state) => state.icon)
 	return (
 		<div>
-			<svg width="150px" height="100px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+			<svg
+				className="transition-colors duration-300 ease-in-out w-[100%] h-[100%]"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
 				<path
 					className="transition-colors duration-300 ease-in-out"
 					d="M0.228341 8.36915C0.228341 8.36915 -0.356212 7.94324 0.345251 7.37453L1.97956 5.89736C1.97956 5.89736 2.44721 5.40004 2.94164 5.83334L18.0231 17.375V22.9094C18.0231 22.9094 18.0158 23.7785 16.9124 23.6825L0.228341 8.36915Z"

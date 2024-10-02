@@ -4,7 +4,7 @@ const BootstrapSvgFile = () => {
 	const {fillColor, id} = useSelector((state) => state.icon)
 	return (
 		<svg
-			className="transition-colors duration-300 ease-in-out w-[100%]"
+			className="transition-colors duration-300 ease-in-out w-[100%] h-[100%]"
 			viewBox="0 0 24 24"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

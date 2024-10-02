@@ -4,10 +4,8 @@ const ExpressSvgFile = () => {
 	const {fillColor, id} = useSelector((state) => state.icon)
 	return (
 		<svg
-			className="transition-colors duration-300 ease-in-out"
+			className="transition-colors duration-300 ease-in-out w-[100%] h-[100%]"
 			fill={`${id === 15 ? fillColor : "#565656"}`}
-			width="150px"
-			height="100px"
 			viewBox="0 0 24 24"
 			role="img"
 			xmlns="http://www.w3.org/2000/svg"
