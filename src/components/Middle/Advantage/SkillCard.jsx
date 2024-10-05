@@ -12,7 +12,7 @@ const SkillsCard = (props) => {
 	return (
 		<div className="flex flex-col justify-center items-center rounded-custom">
 			<div
-				className="border-[2px] border-primaryBorder flex flex-col justify-start rounded-custom items-center hover:border-secondary group transition-all duration-300 ease-in-out 2xl:px-[25px] 2xl:py-[50px] xl:px-[20px] xl:py-[20px] lg:px-[20px] lg:py-[20px]"
+				className="border-[2px] border-primaryBorder flex flex-col justify-start rounded-custom items-center hover:border-secondary group transition-all duration-300 ease-in-out 2xl:px-[25px] 2xl:py-[50px] p-[20px]"
 				onMouseEnter={handleMouseEnter}
 				onMouseLeave={handleMouseOut}
 			>
