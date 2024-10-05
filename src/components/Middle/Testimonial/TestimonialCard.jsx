@@ -16,7 +16,7 @@ const TestimonialCard = (props) => {
 		reviewerCompanyLink,
 	} = props
 	return (
-		<div className="space-y-[50px] border-2 border-primaryBorder p-[50px] rounded-[20px] group">
+		<div className="space-y-[50px] border-2 border-primaryBorder p-[50px] md:p-[30px] rounded-[20px] group">
 			{/* reviewer info here */}
 			<div className="flex items-center gap-[2rem]">
 				<img src={reviewerImage} className="rounded-[100%]" width={70} height={70} alt="" />
