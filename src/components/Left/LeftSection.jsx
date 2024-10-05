@@ -6,7 +6,7 @@ import DrawerComponents from "./DrawerComponents"
 
 const LeftSection = () => {
 	return (
-		<section className="2xl:col-span-3 2xl:fixed 2xl:top-[8%] 2xl:left-[0%] 2xl:w-1/4 2xl:px-[30px] xl:px-[20px] xl:col-span-3 xl:fixed xl:top-[10%] xl:left-[2%] xl:w-[28%] lg:w-9/12 lg:-mt-[4%] md:w-7/12 sm:w-7/12 xs:w-full xxs:w-fit">
+		<section className="2xl:col-span-3 2xl:fixed 2xl:top-[8%] 2xl:left-[0%] 2xl:w-1/4 2xl:px-[30px] xl:px-[20px] xl:col-span-3 xl:fixed xl:top-[10%] xl:left-[2%] xl:w-[28%] lg:w-9/12 lg:-mt-[4%] md:w-7/12 xs:w-full xxs:w-fit sm:mt-10">
 			<div className="border-[1px] border-primaryBorder rounded-custom 2xl:flex 2xl:flex-col xl:flex xl:flex-col lg:flex lg:flex-col lg:relative md:flex md:flex-col md:relative sm:flex sm:flex-col sm:relative xs:flex xs:flex-col xs:relative xxs:flex xxs:flex-col xxs:relative">
 				{/* components */}
 				<TopHeader />
