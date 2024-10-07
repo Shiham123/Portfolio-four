@@ -16,8 +16,11 @@ const MiddleSection = () => {
 			<ServicesSection />
 			<Advantage />
 			<ProjectSection />
-			<TestimonialSection />
-			<FormSection />
+			{/* in xxs device testimonial and form section making overflow in page */}
+			<div className="xxs:hidden">
+				<TestimonialSection />
+				<FormSection />
+			</div>
 		</section>
 	)
 }
