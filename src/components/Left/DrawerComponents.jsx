@@ -13,7 +13,7 @@ const DrawerComponents = () => {
 	return (
 		<div
 			onClick={handleSidebarOpen}
-			className="2xl:hidden xl:hidden absolute border-primaryBorder group hover:border-secondary lg:top-0 lg:-right-[10%] md:top-0 md:-right-[30%] sm:top-0 sm:right-0 xs:top-0 xs:right-0 xxs:top-0 xxs:right-0 cursor-pointer border-[2px] rounded-custom p-2 transition-all duration-300 ease-in-out"
+			className="2xl:hidden xl:hidden absolute border-primaryBorder group hover:border-secondary lg:top-0 lg:-right-[10%] md:top-0 md:-right-[30%] sm:top-0 sm:right-0 xs:top-0 xs:right-0 xxs:top-0 xxs:right-0 cursor-pointer border-[2px] xxs:border-none rounded-custom p-2 transition-all duration-300 ease-in-out"
 		>
 			<HiMiniBars2
 				size={30}
