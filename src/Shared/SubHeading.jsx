@@ -2,9 +2,9 @@ import PropTypes from "prop-types"
 
 const SubHeading = ({mainText, spanText}) => {
 	return (
-		<h1 className="2xl:text-headingOne2xl xl:text-headingOneXl lg:text-headingOneLg md:text-headingOneMd sm:text-headingOneMd mt-[32px] mb-[40px] text-primaryFont font-Inter font-light capitalize">
+		<h1 className="2xl:text-headingOne2xl xl:text-headingOneXl lg:text-headingOneLg md:text-headingOneMd sm:text-headingOneMd xs:text-headingOneXs mt-[32px] mb-[40px] text-primaryFont font-Inter font-light capitalize">
 			{mainText}
-			<span className="text-secondary pl-5">{spanText}</span>
+			<span className="text-secondary pl-5 xs:pl-3">{spanText}</span>
 		</h1>
 	)
 }
