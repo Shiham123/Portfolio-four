@@ -4,9 +4,9 @@ import LittlePara from "../../../Shared/LittlePara"
 
 const Introduction = () => {
 	return (
-		<div className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] sm:mt-[7%] xl:px-[10%] lg:mt-[10%] md:mt-[10%] xs:mt-[15%] xxs:m-[20px]">
+		<div className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] sm:mt-[7%] xl:px-[10%] lg:mt-[10%] md:mt-[10%] xs:mt-[15%] xxs:mt-[0px] xxs:m-[20px]">
 			<LittleHeading Icon={GoHome} headingText="introduce" />
-			<h1 className="2xl:text-headingOne2xl xl:text-headingOneXl lg:text-headingOneLg md:text-headingOneMd sm:text-headingOneMd xs:text-headingOneXs mt-[32px] mb-[40px] text-primaryFont font-Inter font-light capitalize">
+			<h1 className="2xl:text-headingOne2xl xl:text-headingOneXl lg:text-headingOneLg md:text-headingOneMd sm:text-headingOneMd xs:text-headingOneXs xxs:text-headingOneXs mt-[32px] mb-[40px] xxs:my-[20px] text-primaryFont font-Inter font-light capitalize">
 				Say Hi from <span className="text-secondary">Shiham</span>, <br /> A MERN Stack Developer
 				<br /> And Programmer.
 			</h1>
