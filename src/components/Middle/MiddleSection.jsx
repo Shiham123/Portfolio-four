@@ -9,7 +9,7 @@ import TestimonialSection from "./Testimonial/TestimonialSection"
 
 const MiddleSection = () => {
 	return (
-		<section className="2xl:col-span-8 2xl:col-start-4 2xl:col-end-12 2xl:mt-[10%] xl:col-span-8 xl:col-start-4 xl:col-end-12 xl:mt-[10%] xxs:border-2 xxs:border-white">
+		<section className="2xl:col-span-8 2xl:col-start-4 2xl:col-end-12 2xl:mt-[10%] xl:col-span-8 xl:col-start-4 xl:col-end-12 xl:mt-[10%]">
 			<Introduction />
 			<About />
 			<Experience />

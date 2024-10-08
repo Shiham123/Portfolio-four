@@ -2,6 +2,9 @@
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
+		container: {
+			screens: {xxs: "none"},
+		},
 		extend: {
 			borderRadius: {custom: "30px"},
 			screens: {
