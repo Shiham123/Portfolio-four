@@ -8,8 +8,8 @@ export default {
 		extend: {
 			borderRadius: {custom: "30px"},
 			screens: {
-				xxs: {min: "0px", max: "374px"},
-				xs: {min: "375px", max: "639px"},
+				xxs: {min: "0px", max: "399px"},
+				xs: {min: "400px", max: "639px"},
 				sm: {min: "640px", max: "767px"},
 				md: {min: "768px", max: "1023px"},
 				lg: {min: "1024px", max: "1279px"},
