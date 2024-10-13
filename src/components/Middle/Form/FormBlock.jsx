@@ -36,13 +36,13 @@ const FormBlock = () => {
 	return (
 		<form onSubmit={handleSubmit}>
 			{/* Email link at the top */}
-			<h6 className="text-2xl mt-4 mb-4 text-secondary p-4 border-[1px] rounded-[24px] border-primaryBorder hover:bg-secondary hover:text-primary inline-block transition-all duration-300">
+			<h6 className="text-2xl xxs:text-sm mt-4 mb-4 text-secondary p-4 border-[1px] rounded-[24px] border-primaryBorder hover:bg-secondary hover:text-primary inline-block transition-all duration-300">
 				<span className="cursor-pointer italic">
 					<a href="mailto:shihamibneyousuf@gmail.com">shihamibneyousuf@gmail.com</a>
 				</span>
 			</h6>
 
-			<div className="pt-10">
+			<div className="pt-10 xxs:pt-1">
 				<div className="flex justify-start items-start gap-4 xxs:flex-col space-y-10">
 					{/* Full Name input field */}
 					<div className="flex flex-col w-1/2 gap-4">
