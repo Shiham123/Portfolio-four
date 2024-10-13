@@ -16,9 +16,9 @@ const TestimonialCard = (props) => {
 		reviewerCompanyLink,
 	} = props
 	return (
-		<div className="space-y-[50px] border-2 border-primaryBorder p-[50px] md:p-[30px] rounded-[20px] group">
+		<div className="space-y-[50px] border-2 border-primaryBorder p-[50px] xxs:p-[24px] md:p-[30px] rounded-[20px] group">
 			{/* reviewer info here */}
-			<div className="flex items-center gap-[2rem]">
+			<div className="flex items-center gap-[2rem] xxs:flex-col xxs:items-start">
 				<img src={reviewerImage} className="rounded-[100%]" width={70} height={70} alt="" />
 				<div className="space-y-2">
 					<p className="font-Poppins text-primaryFont text-xl hover:text-secondary">
@@ -45,7 +45,7 @@ const TestimonialCard = (props) => {
 			</div>
 
 			{/* icon block */}
-			<div className="flex gap-3">
+			<div className="flex gap-3 flex-wrap">
 				<PerIcon Icon={FaTwitter} />
 				<PerIcon Icon={FaWhatsapp} />
 				<PerIcon Icon={FaTelegram} />

@@ -67,7 +67,7 @@ const TestimonialSection = () => {
 			)}
 
 			{/* Navigation icons */}
-			<div className="flex justify-start items-start gap-4 mt-[2%]">
+			<div className="flex justify-start items-start gap-4 mt-[2%] xxs:mt-[5%]">
 				{/* Previous icon */}
 				<div
 					onClick={() => handlePrevious()}
