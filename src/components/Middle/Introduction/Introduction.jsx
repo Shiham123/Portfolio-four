@@ -4,7 +4,7 @@ import LittlePara from "../../../Shared/LittlePara"
 
 const Introduction = () => {
 	return (
-		<div className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] sm:mt-[7%] xl:px-[10%] lg:mt-[10%] md:mt-[10%] xs:mt-[15%] xxs:mt-[0px] xxs:m-[20px]">
+		<section className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] sm:mt-[7%] xl:px-[10%] lg:mt-[10%] md:mt-[10%] xs:mt-[15%] xxs:mx-[20px] xxs:mt-[40px]">
 			<LittleHeading Icon={GoHome} headingText="introduce" />
 			<h1 className="2xl:text-headingOne2xl xl:text-headingOneXl lg:text-headingOneLg md:text-headingOneMd sm:text-headingOneMd xs:text-headingOneXs xxs:text-headingOneXs mt-[32px] mb-[40px] xxs:my-[20px] text-primaryFont font-Inter font-light capitalize">
 				Say Hi from <span className="text-secondary">Shiham</span>, <br /> A MERN Stack Developer
@@ -15,7 +15,7 @@ const Introduction = () => {
 				<LittlePara paraText="With a proficient understanding of state management using Redux and RTK Query, Shiham has successfully developed projects like the MERN Quiz App, Redux Todo App, and BD Quick School. These projects showcase his ability to implement features like user authentication, video streaming, payment integration, and real-time communication using technologies like Firebase, JWT, SSL, and ZgoCloud." />
 				<LittlePara paraText="Shiham's portfolio demonstrates his commitment to delivering high-quality, user-friendly applications with a strong emphasis on code quality, performance, and user experience." />
 			</div>
-		</div>
+		</section>
 	)
 }
 
