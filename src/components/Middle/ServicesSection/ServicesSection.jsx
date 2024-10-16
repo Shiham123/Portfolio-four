@@ -10,11 +10,12 @@ import {CiLock} from "react-icons/ci"
 import {LiaTasksSolid} from "react-icons/lia"
 
 const ServicesSection = () => {
+	// TODO: service section repairing
 	return (
-		<section className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:mx-[20px]">
+		<section className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:mx-[20px] border-2 border-white">
 			<LittleHeading headingText="services" Icon={FaBarsStaggered} />
-			<SubHeading mainText="my" spanText="Specialization" />
-			<section className="flex justify-center items-start flex-col gap-8 xxs:gap-[24px] my-[30px]">
+			<SubHeading classes="xxs:my-[20px]" mainText="my" spanText="Specialization" />
+			<section className="flex justify-center items-start flex-col gap-8 xxs:gap-[24px]">
 				<ServiceCard
 					headingText="MERN Stack Development"
 					paraText="I develop full-stack applications using MongoDB, ExpressJS, ReactJS, and NodeJS."

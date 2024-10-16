@@ -7,7 +7,7 @@ const FormSection = () => {
 	return (
 		<div className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:m-[20px] mt-[15%] my-[10rem] rounded-[20px] relative">
 			<LittleHeading headingText="Contact" Icon={IoMdMail} />
-			<SubHeading mainText="You Wanna" spanText="Contact Me?" />
+			<SubHeading classes="xxs:my-[20px]" mainText="You Wanna" spanText="Contact Me?" />
 
 			<FormBlock />
 		</div>

@@ -15,7 +15,7 @@ const ProjectSection = () => {
 	return (
 		<div className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:m-[20px] mt-[15%]  my-[10rem] rounded-[20px]">
 			<LittleHeading headingText="portfolio" Icon={FaGripVertical} />
-			<SubHeading mainText="my" spanText="projects" />
+			<SubHeading classes="xxs:my-[20px]" mainText="my" spanText="projects" />
 
 			<div className="flex flex-col gap-10">
 				<PerItem image={projectImageOne} overFlowText="my portfolio" altText="My portfolio Image" />
