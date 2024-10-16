@@ -11,7 +11,7 @@ import {LiaTasksSolid} from "react-icons/lia"
 
 const ServicesSection = () => {
 	return (
-		<section className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:mx-[20px] overflow-hidden">
+		<section className="2xl:px-[7%] md:px-[10%] sm:px-[10%] lg:px-[10%] xl:px-[10%] xxs:mx-[20px]">
 			<LittleHeading headingText="services" Icon={FaBarsStaggered} />
 			<SubHeading mainText="my" spanText="Specialization" />
 			<section className="flex justify-center items-start flex-col gap-8 xxs:gap-[24px] my-[30px]">

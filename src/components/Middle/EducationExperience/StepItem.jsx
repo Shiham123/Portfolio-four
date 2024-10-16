@@ -4,7 +4,7 @@ const StepItem = (props) => {
 	const {topText, middleText, lastText} = props
 	return (
 		<>
-			<div className="step-item flex flex-col justify-start items-start relative py-8 pl-12">
+			<div className="step-item flex flex-col justify-start items-start relative py-8 pl-12 xxs:pl-8">
 				{/* this is absolute line section / line bar */}
 				<div className="absolute top-[25%] left-0 h-[100%] xxs:h-[110%] w-[1px] bg-paraColor opacity-70"></div>
 				{/* this is dot making class */}
